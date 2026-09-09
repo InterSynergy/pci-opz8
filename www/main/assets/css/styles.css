@@ -1,0 +1,24 @@
+*{box-sizing:border-box}
+body{margin:0;background:#fbfbfa;color:#14171a;font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#C8102E;text-decoration:none}
+a:hover{color:#8f0b20}
+
+@media (max-width:720px){
+  #wr-nav{display:none!important}
+}
+@media (max-width:1100px){
+  #wr-ph-l,#wr-ph-r{display:none!important}
+  #wr-ph-c{width:100%!important;max-width:290px!important}
+}
+
+@keyframes waspPulse{
+  0%,100%{opacity:.45;transform:scale(1)}
+  50%{opacity:1;transform:scale(1.25)}
+}
+
+/* Hover states (replace the design-canvas "style-hover" attribute) */
+.nav-link:hover{color:#C8102E}
+.btn-dark:hover{background:#C8102E}
+.btn-red:hover{background:#14171a}
+.btn-outline:hover{border-color:#14171a}
+.btn-invert:hover{background:#14171a;color:#fff}

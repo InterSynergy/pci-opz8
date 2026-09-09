@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>wasp.red — dziennik treningowy strzelca z rozpoznawaniem tarczy AI (wireframe)</title>
+<meta name="description" content="Wasp.red rozpoznaje typ tarczy i oznacza przestrzeliny ze zdjęcia. Wynik, broń, dystans, data i miejsce trafiają do dziennika treningowego — bez dodatkowego sprzętu i bez internetu.">
+<link rel="icon" href="assets/img/logo-dark.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div style="max-width:100%;overflow-x:hidden">
+<header style="position:sticky;top:0;z-index:50;background:rgba(251,251,250,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(20,23,26,.08)">
+<div style="max-width:1180px;margin:0 auto;padding:14px clamp(20px,4vw,32px);display:flex;flex-wrap:nowrap;align-items:center;gap:20px">
+<a href="index.html" style="display:flex;align-items:center;flex:0 0 auto">
+<img src="assets/img/logo-light.png" alt="wasp.red" style="height:30px;width:auto;display:block">
+</a>
+<nav id="wr-nav" style="display:flex;flex-wrap:nowrap;gap:24px;margin-left:auto;font-size:14px;color:rgba(20,23,26,.62);font-weight:500">
+<a href="funkcje.html" style="color:inherit" class="nav-link">Funkcje</a>
+<a href="dla-kogo.html" style="color:inherit" class="nav-link">Dla kogo</a>
+<a href="prywatnosc.html" style="color:inherit" class="nav-link">Prywatność</a>
+<a href="o-projekcie.html" style="color:inherit" class="nav-link">O projekcie</a>
+<a href="kontakt.html" style="color:inherit" class="nav-link">Kontakt</a>
+</nav>
+<a href="kontakt.html" style="padding:10px 18px;background:#14171a;color:#fff;border-radius:999px;font-size:14px;font-weight:600;white-space:nowrap" class="btn-dark">Wczesny dostęp</a>
+</div>
+</header>
+
+<section style="max-width:1180px;margin:0 auto;padding:clamp(48px,7vw,88px) clamp(20px,4vw,32px) 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(36px,5vw,64px);align-items:center">
+<div>
+<div style="display:inline-flex;align-items:center;gap:9px;padding:7px 13px;border:1px solid rgba(200,16,46,.28);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#C8102E;margin-bottom:26px">
+<span style="width:6px;height:6px;border-radius:50%;background:#C8102E;animation:waspPulse 2.4s ease-in-out infinite"></span>W budowie · zapisy na wczesny dostęp
+</div>
+<h1 style="margin:0 0 22px;font-size:clamp(40px,5.2vw,68px);line-height:1.02;letter-spacing:-.035em;font-weight:700;text-wrap:balance">Zrób zdjęcie tarczy.<br>Resztę policzy<br><span style="color:#C8102E">wasp.red</span>.</h1>
+<p style="margin:0 0 34px;font-size:19px;line-height:1.55;color:rgba(20,23,26,.66);max-width:34em;text-wrap:pretty">AI rozpoznaje typ tarczy i oznacza przestrzeliny — pomijając te z poprzedniej serii. Wynik, broń, dystans, data i miejsce trafiają do Twojego dziennika treningu. Bez dodatkowego sprzętu, bez internetu, bez wpisywania punktów z ręki.</p>
+<div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:30px">
+<a href="#early" style="padding:16px 28px;background:#C8102E;color:#fff;border-radius:999px;font-size:16px;font-weight:600;box-shadow:0 8px 24px -8px rgba(200,16,46,.55)" class="btn-red">Zapisz się na wczesny dostęp</a>
+<a href="funkcje.html" style="padding:16px 24px;border:1px solid rgba(20,23,26,.18);border-radius:999px;font-size:16px;font-weight:600;color:#14171a" class="btn-outline">Zobacz wszystkie funkcje</a>
+</div>
+<p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.7;color:rgba(20,23,26,.45)">Android i iOS · aplikacja nie jest jeszcze dostępna w sklepach<br>We All Shooters Platform</p>
+</div>
+<div style="display:flex;gap:18px;justify-content:center;align-items:flex-end">
+<div style="width:44%;max-width:230px;aspect-ratio:9/19;border-radius:26px;border:1px solid rgba(20,23,26,.14);background:repeating-linear-gradient(135deg,#f1f0ee 0 8px,#e8e7e4 8px 16px);display:flex;align-items:flex-end;padding:14px">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;color:rgba(20,23,26,.5)">zrzut ekranu:<br>skan tarczy</span>
+</div>
+<div style="width:52%;max-width:270px;aspect-ratio:9/19;border-radius:30px;border:1px solid rgba(20,23,26,.16);background:repeating-linear-gradient(135deg,#f4f3f1 0 8px,#eceae7 8px 16px);display:flex;align-items:flex-end;padding:16px;box-shadow:0 24px 60px -30px rgba(20,23,26,.4)">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;color:rgba(20,23,26,.5)">zrzut ekranu:<br>wynik serii<br>+ statystyki</span>
+</div>
+<div style="width:40%;max-width:210px;aspect-ratio:9/19;border-radius:24px;border:1px solid rgba(20,23,26,.12);background:repeating-linear-gradient(135deg,#f1f0ee 0 8px,#e8e7e4 8px 16px);display:flex;align-items:flex-end;padding:13px">
+<span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;color:rgba(20,23,26,.45)">zrzut ekranu:<br>szafa na broń</span>
+</div>
+</div>
+</section>
+
+<section style="border-top:1px solid rgba(20,23,26,.08);border-bottom:1px solid rgba(20,23,26,.08);background:#fff">
+<div style="max-width:1180px;margin:0 auto;padding:40px clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:28px">
+<div><div style="font-size:38px;font-weight:700;letter-spacing:-.03em;min-height:46px">dziesiątki tys.</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(20,23,26,.5);margin-top:6px;line-height:1.5">czynnych strzelców w Polsce,<br>miliony na świecie</div></div>
+<div><div style="font-size:38px;font-weight:700;letter-spacing:-.03em;min-height:46px">600</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(20,23,26,.5);margin-top:6px;line-height:1.5">klubów sportowych w Polsce,<br>tysiące na świecie</div></div>
+<div><div style="font-size:38px;font-weight:700;letter-spacing:-.03em;min-height:46px">setki</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(20,23,26,.5);margin-top:6px;line-height:1.5">zawodów strzeleckich<br>rocznie w samej Polsce</div></div>
+<div><div style="font-size:38px;font-weight:700;letter-spacing:-.03em;color:#C8102E;min-height:46px">0</div><div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(20,23,26,.5);margin-top:6px;line-height:1.5">dodatkowych urządzeń<br>i warunków oświetlenia</div></div>
+</div>
+</section>
+
+<section style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(36px,5vw,64px);align-items:start">
+<div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">01 — Problem</div>
+<h2 style="margin:0 0 20px;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-.03em;font-weight:700;text-wrap:balance">Strzelec patrzy na tarczę, mówi „poszło dobrze” i wraca na stanowisko.</h2>
+<p style="margin:0;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62);text-wrap:pretty">Seria, podejście do tarczy, zakreślenie albo zalepienie przestrzelin, powrót. I tyle. Wynik zostaje w głowie albo w notatniku, którego nikt nie otwiera. Analiza „na żywo” nie istnieje, a dzielenie się wynikami kończy się na zdjęciu wysłanym na czacie.</p>
+</div>
+<div style="display:grid;gap:14px">
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px">
+<div style="font-weight:600;font-size:17px;margin-bottom:7px">Excel i zdjęcia w galerii</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Da się. Jest niewygodne, zbyt techniczne i po trzech treningach nikt tego nie prowadzi.</div>
+</div>
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px">
+<div style="font-weight:600;font-size:17px;margin-bottom:7px">Systemy elektroniczne na strzelnicy</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Drogie, przywiązane do jednej osi, pokrywają wąski wycinek tego, czego strzelec potrzebuje.</div>
+</div>
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px">
+<div style="font-weight:600;font-size:17px;margin-bottom:7px">Istniejące aplikacje</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Liczą punkty, ale bez AI, z siermiężnym interfejsem i praktycznie bez warstwy społecznościowej.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="jak-dziala" style="background:#14171a;color:#fff">
+<div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#ff6b6b;margin-bottom:18px">02 — Jak to działa</div>
+<h2 style="margin:0 0 14px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:700;max-width:20em">Trzy sekundy między serią a zapisanym wynikiem</h2>
+<p style="margin:0 0 52px;font-size:17px;line-height:1.6;color:rgba(255,255,255,.6);max-width:44em">Jedyne, co czasem musisz podać, to dystans — a i to nie zawsze: oś o znanej długości rozpoznaje się po lokalizacji.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+<div style="padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ff6b6b;margin-bottom:20px">KROK 01</div>
+<div style="aspect-ratio:4/3;border-radius:12px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 8px,rgba(255,255,255,.03) 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(255,255,255,.45)">foto: telefon celuje w tarczę</span></div>
+<div style="font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Zrzut tarczy</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(255,255,255,.6)">Zdjęcie ze stanowiska. Bez statywu, bez markerów, bez wymagań co do światła.</div>
+</div>
+<div style="padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ff6b6b;margin-bottom:20px">KROK 02</div>
+<div style="aspect-ratio:4/3;border-radius:12px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 8px,rgba(255,255,255,.03) 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(255,255,255,.45)">zrzut: tarcza z oznaczeniami AI</span></div>
+<div style="font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">AI czyta tarczę</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(255,255,255,.6)">Rozpoznaje typ tarczy, znajduje przestrzeliny i pomija te z poprzedniej serii. Model działa offline, na urządzeniu.</div>
+</div>
+<div style="padding:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:18px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ff6b6b;margin-bottom:20px">KROK 03</div>
+<div style="aspect-ratio:4/3;border-radius:12px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.07) 0 8px,rgba(255,255,255,.03) 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(255,255,255,.45)">zrzut: karta serii w dzienniku</span></div>
+<div style="font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Seria w dzienniku</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(255,255,255,.6)">Wynik plus kontekst: data, godzina, miejsce, pogoda, broń, kaliber, dodatki, dystans.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="statystyki" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">03 — Statystyki i zestawienia</div>
+<h2 style="margin:0 0 14px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:700;max-width:22em">Każda seria to dane. Krzyżuj je, jak chcesz.</h2>
+<p style="margin:0 0 48px;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62);max-width:44em">Punkty i pola trafienia to tylko jedna zmienna. Wasp.red zestawia je z resztą kontekstu treningu — także z tym, o którym zwykle się zapomina, jak długość sesji czy godzina strzelania.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:24px">
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Punkty i pola trafień</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Typ tarczy</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Dystans</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Broń i kaliber</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Dodatki: kolimator, luneta</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Pora dnia treningu</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Długość sesji</div>
+<div style="padding:18px 20px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:14px;font-weight:600;font-size:15.5px">Pogoda</div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+<div style="padding:30px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:18px">
+<div style="aspect-ratio:16/9;border-radius:12px;background:repeating-linear-gradient(135deg,#f2f1ef 0 8px,#eae9e6 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(20,23,26,.5)">wykres: postęp w czasie</span></div>
+<div style="font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Postęp, nie pojedynczy wynik</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Trend przez tygodnie i sezony, a nie „dobrze/źle” po jednej serii.</div>
+</div>
+<div style="padding:30px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:18px">
+<div style="aspect-ratio:16/9;border-radius:12px;background:repeating-linear-gradient(135deg,#f2f1ef 0 8px,#eae9e6 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(20,23,26,.5)">wykres: rozrzut na tarczy</span></div>
+<div style="font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Rozkład trafień</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Gdzie skupienie faktycznie leży — z podziałem na broń, dystans i konkurencję.</div>
+</div>
+<div style="padding:30px;background:rgba(200,16,46,.04);border:1px dashed rgba(200,16,46,.4);border-radius:18px">
+<div style="display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border-radius:999px;background:rgba(200,16,46,.1);font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">Do potwierdzenia · L-01</div>
+<div style="aspect-ratio:16/9;border-radius:12px;background:repeating-linear-gradient(135deg,rgba(200,16,46,.07) 0 8px,rgba(200,16,46,.03) 8px 16px);display:flex;align-items:flex-end;padding:12px;margin-bottom:20px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;color:rgba(200,16,46,.65)">makieta: karta z radą dla strzelca</span></div>
+<div style="font-size:19px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Rada, nie tylko liczba</div>
+<div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.62)">Hipoteza: aplikacja podpowiada, co zmienić w kolejnej serii. Warstwa doradcza nie jest opisana w dokumentach projektu — zakres i sposób działania wymagają decyzji przed publikacją strony.</div>
+<div style="margin-top:14px"><a href="funkcje.html" style="font-size:15px;font-weight:600">Roadmapa i statusy funkcji →</a></div>
+</div>
+</div>
+</section>
+
+<section style="background:#fff;border-top:1px solid rgba(20,23,26,.08);border-bottom:1px solid rgba(20,23,26,.08)">
+<div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(36px,5vw,64px);align-items:center">
+<div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">04 — Wirtualna szafa</div>
+<h2 style="margin:0 0 20px;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-.03em;font-weight:700">Twoja kolekcja w jednym miejscu</h2>
+<p style="margin:0 0 28px;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62);max-width:34em">Broń, kalibry, kolimatory i lunety opisane raz — potem wybierasz je jednym tapnięciem przy zapisie serii. Stan amunicji liczy się sam, razem z kosztem, który przy dzisiejszych cenach niski nie jest.</p>
+<div style="display:grid;gap:10px;max-width:30em">
+<div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C8102E">01</span><span style="font-size:16px">Baza broni z dodatkami i konfiguracjami</span></div>
+<div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C8102E">02</span><span style="font-size:16px">Stan i zużycie amunicji per kaliber</span></div>
+<div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:#C8102E">03</span><span style="font-size:16px">Timer strzelniczy w aplikacji</span></div>
+<div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(20,23,26,.3)">04</span><span style="font-size:16px;color:rgba(20,23,26,.5)">Kalkulator balistyczny — w planach</span></div>
+<div style="margin-top:14px"><a href="o-projekcie.html" style="font-size:16px;font-weight:600">O projekcie i etapie prac →</a></div>
+</div>
+</div>
+<div style="aspect-ratio:9/16;max-width:300px;justify-self:center;width:100%;border-radius:28px;border:1px solid rgba(20,23,26,.14);background:repeating-linear-gradient(135deg,#f4f3f1 0 8px,#eceae7 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;line-height:1.5;color:rgba(20,23,26,.5)">zrzut ekranu:<br>wirtualna szafa pancerna</span></div>
+</div>
+</section>
+
+<section id="spolecznosc" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">05 — Społeczność</div>
+<h2 style="margin:0 0 14px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:700;max-width:20em">Wirtualna strzelnica — dla tych, którzy chcą</h2>
+<p style="margin:0 0 48px;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62);max-width:44em">Funkcje społecznościowe są w całości opcjonalne i włączają się dopiero, gdy zdecydujesz się korzystać z trybu online.</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px">
+<div style="padding:26px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Znajomi i porównania</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Zestawiaj postęp z ludźmi, z którymi strzelasz.</div></div>
+<div style="padding:26px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Wirtualne kluby</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Grupy otwarte lub zamknięte, z własnymi statystykami i zawodami.</div></div>
+<div style="padding:26px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Zawody i wyzwania</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Turnieje między użytkownikami — bez wyjazdu na jedną strzelnicę.</div></div>
+<div style="padding:26px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Odznaki</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Grywalizacja, która ma sens także w trybie offline.</div></div>
+</div>
+</section>
+
+<section style="background:#14171a;color:#fff">
+<div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#ff6b6b;margin-bottom:18px">06 — Offline i online</div>
+<h2 style="margin:0 0 52px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:700;max-width:20em">Ty decydujesz, ile z tego opuszcza telefon</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+<div style="padding:34px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:20px">
+<div style="font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px">Offline</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(255,255,255,.45);margin-bottom:24px">bez konta, bez sieci, bez chmury</div>
+<div style="display:grid;gap:12px;font-size:16px;line-height:1.5">
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Wykrywanie tarczy i przestrzelin</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Analizy i statystyki</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Wirtualna szafa i amunicja</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Śledzenie treningów</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Timer strzelniczy</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Odznaki</div>
+</div>
+</div>
+<div style="padding:34px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:20px">
+<div style="font-size:24px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px">Online</div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;color:rgba(255,255,255,.45);margin-bottom:24px">włączasz wtedy, kiedy chcesz</div>
+<div style="display:grid;gap:12px;font-size:16px;line-height:1.5">
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Kopia danych w chmurze</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Statystyki w przeglądarce</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Znajomi i wirtualne kluby</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Zawody między użytkownikami</div>
+<div style="display:flex;gap:12px"><span style="color:#ff6b6b">—</span>Udostępnianie wyników</div>
+</div>
+</div>
+</div>
+<p style="margin:28px 0 0;font-size:16px;line-height:1.6;color:rgba(255,255,255,.55);max-width:44em">Kluczowe funkcje nie potrzebują internetu — także dlatego, że część naszych użytkowników to funkcjonariusze służb, dla których „w chmurze” nie jest opcją.</p>
+</div>
+</section>
+
+<section id="prywatnosc" style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(36px,5vw,64px);align-items:start">
+<div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">07 — Prywatność</div>
+<h2 style="margin:0 0 20px;font-size:clamp(30px,3.6vw,44px);line-height:1.1;letter-spacing:-.03em;font-weight:700">Nie jesteś produktem</h2>
+<p style="margin:0 0 20px;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62)">Dane o Twojej broni, treningach i lokalizacjach strzelnic nie są przedmiotem obrotu. Nie sprzedajemy danych ani metadanych użytkowników. Rozpoznawanie tarczy dzieje się na urządzeniu, a synchronizacja z chmurą jest wyborem, nie warunkiem działania aplikacji.</p>
+<p style="margin:0;font-size:17px;line-height:1.6;color:rgba(20,23,26,.62)">Bezpieczeństwo traktujemy jak funkcję produktu: szyfrowanie danych, redundancja infrastruktury i zewnętrzne audyty — zarówno warstwy offline, jak i online.</p>
+</div>
+<div style="display:grid;gap:12px">
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-weight:600;font-size:16.5px;margin-bottom:6px">AI na urządzeniu</div><div style="font-size:15px;line-height:1.5;color:rgba(20,23,26,.6)">Zdjęcia tarcz nie muszą nigdzie wyjeżdżać.</div></div>
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-weight:600;font-size:16.5px;margin-bottom:6px">Zewnętrzne audyty bezpieczeństwa</div><div style="font-size:15px;line-height:1.5;color:rgba(20,23,26,.6)">Planowane przed udostępnieniem trybu online.</div></div>
+<div style="padding:22px 24px;background:#fff;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-weight:600;font-size:16.5px;margin-bottom:6px">Zero handlu danymi</div><div style="font-size:15px;line-height:1.5;color:rgba(20,23,26,.6)">Ani danych, ani metadanych, ani profili do targetowania.</div></div>
+<a href="prywatnosc.html" style="padding:22px 24px;background:#14171a;color:#fff;border-radius:16px;font-weight:600;font-size:16px" class="btn-dark">Pełny opis prywatności i bezpieczeństwa →</a>
+</div>
+</section>
+
+<section style="background:#fff;border-top:1px solid rgba(20,23,26,.08)">
+<div style="max-width:1180px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,32px)">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:#C8102E;margin-bottom:18px">08 — Dla kogo</div>
+<h2 style="margin:0 0 48px;font-size:clamp(30px,3.6vw,46px);line-height:1.08;letter-spacing:-.03em;font-weight:700;max-width:20em">Jedna aplikacja, sześć powodów, żeby ją mieć</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Strzelcy sportowi</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Dziennik przygotowań do zawodów, który prowadzi się sam.</div></div>
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Konkurencje dynamiczne</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Celność i czas w jednym zestawieniu, z timerem w aplikacji.</div></div>
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Strzelcy okazjonalni</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Pierwszy raz widzisz, czy naprawdę idzie Ci lepiej niż miesiąc temu.</div></div>
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Myśliwi</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Kontrola przystrzelania broni i dodatków na konkretnych dystansach.</div></div>
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Kluby i instruktorzy</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Grupy, zawody i wspólne statystyki zawodników w jednym miejscu.</div></div>
+<div style="padding:26px;border:1px solid rgba(20,23,26,.1);border-radius:16px"><div style="font-size:18px;font-weight:600;margin-bottom:8px;letter-spacing:-.02em">Służby i szkolenia</div><div style="font-size:15px;line-height:1.55;color:rgba(20,23,26,.6)">Pełna funkcjonalność bez konta i bez wysyłania czegokolwiek na serwer.</div></div>
+</div>
+<div style="margin-top:26px"><a href="dla-kogo.html" style="font-size:16px;font-weight:600">Rozwinięte profile użytkowników →</a></div>
+</div>
+</section>
+
+<section id="early" style="background:#C8102E;color:#fff">
+<div style="max-width:1180px;margin:0 auto;padding:clamp(60px,8vw,104px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(36px,5vw,64px);align-items:center">
+<div>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:18px">09 — Wczesny dostęp</div>
+<h2 style="margin:0 0 18px;font-size:clamp(32px,4vw,52px);line-height:1.05;letter-spacing:-.03em;font-weight:700;text-wrap:balance">Zbudujmy to z ludźmi, którzy realnie strzelają</h2>
+<p style="margin:0;font-size:18px;line-height:1.6;color:rgba(255,255,255,.85);max-width:34em">Zostaw adres, a dostaniesz zaproszenie do pierwszych testów i wpływ na to, które statystyki powstaną najpierw. Bez newslettera przy okazji.</p>
+</div>
+<div style="background:#fff;color:#14171a;border-radius:22px;padding:32px;box-shadow:0 30px 70px -30px rgba(0,0,0,.5)">
+<div style="display:grid;gap:14px">
+<label style="display:grid;gap:7px"><span style="font-size:13px;font-weight:600">Adres e-mail</span><input type="email" placeholder="jan@przyklad.pl" style="padding:14px 16px;border:1px solid rgba(20,23,26,.18);border-radius:12px;font-family:'Space Grotesk',sans-serif;font-size:16px;outline:none;width:100%"></label>
+<label style="display:grid;gap:7px"><span style="font-size:13px;font-weight:600">Jak strzelasz?</span><select style="padding:14px 16px;border:1px solid rgba(20,23,26,.18);border-radius:12px;font-family:'Space Grotesk',sans-serif;font-size:16px;background:#fff;width:100%"><option>Sportowo, statyczne</option><option>Sportowo, dynamiczne</option><option>Rekreacyjnie</option><option>Myślistwo</option><option>Klub lub instruktor</option><option>Służby, szkolenia</option></select></label>
+<label style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:rgba(20,23,26,.65)"><input type="checkbox" style="margin-top:3px"><span>Zgadzam się na kontakt w sprawie testów wasp.red. Adres nie zostanie nikomu przekazany.</span></label>
+<button style="padding:16px;background:#14171a;color:#fff;border:0;border-radius:999px;font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:600;cursor:pointer" class="btn-dark">Dopisz mnie do listy</button>
+<div style="font-family:'JetBrains Mono',monospace;font-size:11px;line-height:1.6;color:rgba(20,23,26,.45);text-align:center">Prace nad wasp.red trwają od marca 2025<br>Premiera aplikacji nie została jeszcze ogłoszona</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer style="background:#14171a;color:rgba(255,255,255,.6)">
+<div style="max-width:1180px;margin:0 auto;padding:56px clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:36px">
+<div>
+<img src="assets/img/logo-dark.png" alt="wasp.red" style="height:32px;width:auto;display:block;margin-bottom:18px">
+<div style="font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.8">We All Shooters Platform<br>Android, iOS i interfejs www<br>Projekt w budowie · 2026</div>
+</div>
+<div style="display:grid;gap:10px;font-size:14px;align-content:start">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35)">Produkt</div>
+<a href="funkcje.html" style="color:rgba(255,255,255,.62)">Funkcje</a>
+<a href="dla-kogo.html" style="color:rgba(255,255,255,.62)">Dla kogo</a>
+<a href="prywatnosc.html" style="color:rgba(255,255,255,.62)">Prywatność i dane</a>
+</div>
+<div style="display:grid;gap:10px;font-size:14px;align-content:start">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35)">Projekt</div>
+<a href="o-projekcie.html" style="color:rgba(255,255,255,.62)">O projekcie</a>
+<a href="kontakt.html" style="color:rgba(255,255,255,.62)">Wczesny dostęp</a>
+<a href="kontakt.html#faq" style="color:rgba(255,255,255,.62)">Pytania i odpowiedzi</a>
+</div>
+<div style="display:grid;gap:10px;font-size:14px;align-content:start">
+<div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.35)">Kontakt</div>
+<a href="mailto:kontakt@wasp.red" style="color:rgba(255,255,255,.62)">kontakt@wasp.red</a>
+<span style="color:rgba(255,255,255,.35);font-family:'JetBrains Mono',monospace;font-size:11.5px;line-height:1.6">Strona informacyjna.<br>Nie prowadzimy sprzedaży<br>broni ani amunicji.</span>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
