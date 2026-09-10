@@ -14,11 +14,16 @@ HTML/CSS gotowe do wystawienia na GitHub Pages.
 - `funkcje.html`, `dla-kogo.html`, `prywatnosc.html`, `o-projekcie.html`, `kontakt.html`
 - `assets/css/styles.css` — wspólne style (w tym stany hover zastępujące
   atrybut `style-hover` z oryginalnych plików `.dc.html`)
-- `assets/img/` — logo (jasne/ciemne)
+- `assets/img/` — logo (jasne/ciemne) oraz logotypy finansowania:
+  `feng-logo-strip.png`, `innostart-hub-polska.png`
 - `.nojekyll` — wyłącza przetwarzanie Jekyll (niepotrzebne dla zwykłego HTML)
 
 Nawigacja i stopka są powielone w każdym pliku HTML — to standardowe podejście
 dla prostej strony statycznej bez generatora/buildu.
+
+Pasek z logotypami finansowania (Fundusze Europejskie / PARP / InnoStart Hub
+Polska) jest na `index.html` u samej góry, tuż pod nawigacją, oraz w stopce —
+w białej karcie z notatką o współfinansowaniu — na każdej podstronie.
 
 ## Publikacja na GitHub Pages
 
