@@ -11,7 +11,7 @@
   --panel: 15 17 20;
   --pulse: 255 60 60;
   --green: 107 255 168;
-  --bg: 251 251 250;
+  --bg: 235 234 231;
   --color-ink: rgb(var(--ink));
   --color-white: rgb(var(--white));
   --color-accent: rgb(var(--accent));
@@ -85,6 +85,7 @@ a:hover {
 }
 .btn-dark:hover {
   background: var(--color-accent);
+  color: var(--color-white);
 }
 .btn-red {
   background: var(--color-accent);
@@ -92,6 +93,11 @@ a:hover {
 }
 .btn-red:hover {
   background: var(--color-ink);
+  color: var(--color-white);
+}
+.on-dark .btn-red:hover {
+  background: var(--color-accent-light);
+  color: var(--color-ink);
 }
 .btn-outline {
   padding: 16px 24px;
@@ -103,6 +109,7 @@ a:hover {
 }
 .btn-outline:hover {
   border-color: var(--color-ink);
+  color: var(--color-ink);
 }
 .btn-invert {
   padding: 16px 28px;
@@ -358,7 +365,6 @@ a:hover {
   text-transform: uppercase;
   color: var(--color-accent);
 }
-
 .bar-h {
   height: 100%;
   border-radius: 2px;
@@ -642,8 +648,16 @@ a:hover {
   background: var(--color-ink);
   color: var(--color-white);
 }
-.on-dark-muted {
-  color: rgb(var(--white) / .6);
+.lead--onDark {
+  color: rgb(var(--white) / .85);
+}
+.btn-outline--onDark {
+  border-color: rgb(var(--white) / .3);
+  color: var(--color-white);
+}
+.btn-outline--onDark:hover {
+  border-color: var(--color-white);
+  color: var(--color-white);
 }
 .p-muted {
   margin: 0 0 14px;
@@ -740,6 +754,9 @@ a:hover {
   background: var(--color-white);
   border-top: 1px solid rgb(var(--ink) / .1);
 }
+.bg-tint {
+  background: var(--color-bg);
+}
 .section-inner {
   max-width: 1180px;
   margin: 0 auto;
@@ -775,6 +792,9 @@ a:hover {
 }
 .text-accent-light {
   color: var(--color-accent-light);
+}
+.text-accent {
+  color: var(--color-accent);
 }
 .text-md-bold {
   font-size: 14px;
@@ -962,20 +982,20 @@ a:hover {
   align-items: center;
   gap: 10px;
   padding: 7px 13px;
-  border: 1px solid rgb(var(--accent) / .25);
+  border: 1px solid rgb(var(--accent-light) / .25);
   border-radius: 999px;
   font-family: 'JetBrains Mono',monospace;
   font-size: 12px;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-accent-light);
   margin-bottom: 26px;
 }
 .wr-idx-07 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--color-accent-light);
   animation: waspPulse 2.4s ease-in-out infinite;
 }
 .wr-idx-08 {
@@ -1003,7 +1023,7 @@ a:hover {
   font-family: 'JetBrains Mono',monospace;
   font-size: 12px;
   line-height: 1.7;
-  color: rgb(var(--ink) / .45);
+  color: rgb(var(--white) / .45);
 }
 .wr-idx-13 {
   display: flex;
@@ -1019,7 +1039,7 @@ a:hover {
   aspect-ratio: 9/19;
   border-radius: 26px;
   background: var(--color-panel);
-  border: 1px solid rgb(var(--ink) / .18);
+  border: 1px solid rgb(var(--white) / .18);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1086,7 +1106,7 @@ a:hover {
   aspect-ratio: 9/19;
   border-radius: 30px;
   background: var(--color-panel);
-  border: 1px solid rgb(var(--ink) / .18);
+  border: 1px solid rgb(var(--white) / .18);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1178,7 +1198,7 @@ a:hover {
   aspect-ratio: 9/19;
   border-radius: 24px;
   background: var(--color-panel);
-  border: 1px solid rgb(var(--ink) / .18);
+  border: 1px solid rgb(var(--white) / .18);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1257,7 +1277,7 @@ a:hover {
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: rgb(var(--ink) / .62);
+  color: rgb(var(--white) / .6);
   text-wrap: pretty;
 }
 .wr-idx-70 {
@@ -1576,6 +1596,7 @@ a:hover {
   width: 34%;
   border-radius: 8px;
   background: url('../img/target.jpg') center 46%/auto 200% no-repeat;
+  border: 2px solid rgb(var(--white) / .85);
   position: relative;
   flex: none;
 }
@@ -1852,7 +1873,7 @@ a:hover {
 .wr-fun-02 {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(20px,4vw,32px) clamp(56px,8vw,88px);
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
   gap: 18px;
@@ -2024,7 +2045,7 @@ a:hover {
 .wr-dla-02 {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(20px,4vw,32px) clamp(56px,8vw,88px);
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
   display: grid;
   gap: 18px;
 }
@@ -2117,7 +2138,7 @@ a:hover {
   gap: 12px;
   font-family: 'JetBrains Mono',monospace;
   font-size: 12px;
-  color: rgb(var(--ink) / .55);
+  color: rgb(var(--white) / .7);
 }
 .wr-opr-05 {
   margin: 0 0 12px;
@@ -2225,7 +2246,7 @@ a:hover {
 .wr-pry-02 {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 clamp(20px,4vw,32px) clamp(56px,8vw,88px);
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr));
   gap: 18px;
@@ -2306,4 +2327,13 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr));
   gap: 18px;
+}
+
+/* ===================================================================
+   Nadpisanie koloru tekstu na ciemnym tle - umyslnie na koncu pliku,
+   zeby zawsze wygrywac z wczesniej zdefiniowanymi klasami jednorazowymi
+   (ta sama specyficznosc, wygrywa kolejnosc w zrodle).
+   =================================================================== */
+.on-dark-muted {
+  color: rgb(var(--white) / .6);
 }
