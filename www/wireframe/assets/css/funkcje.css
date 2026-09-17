@@ -1,0 +1,73 @@
+/* ===================================================================
+   funkcje.css - style uzywane wylacznie na stronie funkcje.html
+   =================================================================== */
+
+.label-accent--mb18 {
+  margin-bottom: 20px;
+}
+.mono-list {
+  display: grid;
+  gap: 8px;
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  color: rgb(var(--ink) / .5);
+}
+.p-muted-16 {
+  margin: 0 0 14px;
+}
+.wr-fun-01 {
+  max-width: 22em;
+}
+.wr-fun-02 {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap: 18px;
+}
+.wr-fun-03 {
+  padding: 32px;
+  background: var(--color-white);
+  border: 1px solid rgb(var(--ink) / .1);
+  border-radius: 20px;
+  grid-column: span 1;
+}
+.wr-fun-34 {
+  margin: 0 0 12px;
+}
+.wr-fun-35 {
+  margin: 0 0 44px;
+  max-width: 40em;
+}
+.wr-fun-36 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr));
+  gap: 18px;
+}
+.wr-fun-37 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap: clamp(32px,5vw,56px);
+  align-items: start;
+}
+.wr-fun-39 {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgb(var(--ink) / .4);
+  margin-bottom: 8px;
+}
+.wr-fun-41 {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.wr-fun-43 {
+  margin: 0 0 12px;
+}
+.wr-fun-44 {
+  margin: 0;
+  max-width: 30em;
+}

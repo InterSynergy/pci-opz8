@@ -1,0 +1,53 @@
+/* ===================================================================
+   prywatnosc.css - style uzywane wylacznie na stronie prywatnosc.html
+   =================================================================== */
+
+.h3--sm {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.mono-note-dark {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  color: rgb(var(--white) / .45);
+  margin-bottom: 22px;
+}
+.text-accent-light {
+  color: var(--color-accent-light);
+}
+.wr-pry-01 {
+  max-width: 18em;
+}
+.wr-pry-02 {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,260px),1fr));
+  gap: 18px;
+}
+.wr-pry-03 {
+  margin: 0 0 12px;
+}
+.wr-pry-04 {
+  margin: 0 0 48px;
+  max-width: 42em;
+}
+.wr-pry-05 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap: 24px;
+}
+.wr-pry-06 {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(48px,7vw,72px) clamp(20px,4vw,32px);
+}
+.wr-pry-07 {
+  margin: 0;
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  line-height: 1.8;
+  color: rgb(var(--ink) / .45);
+  max-width: 52em;
+}
