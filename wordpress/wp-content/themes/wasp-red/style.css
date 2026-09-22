@@ -1,0 +1,8 @@
+/*
+Theme Name: wasp.red
+Theme URI: https://wasp.red
+Author: Intersynergy
+Description: Autorski motyw WordPress dla wasp.red. Treść i layout każdej strony żyją w plikach szablonu (page-*.php), zgodnie z oryginalnym statycznym designem z www/main. Właściwe style wizualne są w assets/css/ i dołączane przez functions.php — ten plik istnieje tylko dlatego, że WordPress wymaga go do rozpoznania motywu.
+Version: 0.1.0
+Text Domain: wasp-red
+*/

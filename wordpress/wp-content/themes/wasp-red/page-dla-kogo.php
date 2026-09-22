@@ -1,0 +1,137 @@
+<?php
+/**
+ * Page Template: Dla kogo — treść z www/main/dla-kogo.html.
+ */
+defined( 'ABSPATH' ) || exit;
+
+get_header( null, [
+	'title'       => 'Dla kogo — wasp.red',
+	'description' => 'Wasp.red dla strzelców sportowych, konkurencji dynamicznych, myśliwych, klubów, instruktorów oraz służb i szkoleń.',
+] );
+?>
+    <section class="on-dark">
+        <div class="hero-inner">
+            <div class="eyebrow-light">Dla kogo</div>
+            <h1 class="h-hero-lg">Ta sama aplikacja, sześć zupełnie różnych sposobów użycia</h1>
+            <p class="lead lead--onDark">Zawodnik chce trendu przed startem. Instruktor chce widzieć całą sekcję.
+                Funkcjonariusz chce, żeby dane nie opuściły telefonu. Znajdź swój przypadek i sprawdź, co dostajesz od
+                pierwszego treningu.</p>
+        </div>
+    </section>
+
+    <section class="wr-dla-02">
+        <div class="wr-dla-03">
+            <div>
+                <div class="label-accent mb-14">PROFIL 01</div>
+                <h2 class="wr-dla-04">Strzelcy sportowi, konkurencje statyczne</h2>
+                <p class="p-body p-body--ink wr-dla-05">Przygotowanie do startu to kilkadziesiąt treningów, po których
+                    zostaje wrażenie, a nie dane. Wasp.red zamienia każdą serię w wiersz dziennika, więc na dwa tygodnie
+                    przed zawodami wiesz, czy skupienie faktycznie rośnie — i przy jakiej amunicji.</p>
+                <div class="mono-caption">— trend punktacji i rozrzutu w czasie<br>— porównanie amunicji i
+                    konfiguracji<br>— dziennik gotowy do rozmowy z trenerem
+                </div>
+            </div>
+            <div class="wr-dla-06">
+                <svg class="fill" viewBox="0 0 620 465">
+                    <defs>
+                        <linearGradient id="gdk" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0" stop-color="#C8102E" stop-opacity=".22"/>
+                            <stop offset="1" stop-color="#C8102E" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                    <line x1="54" y1="34.0" x2="602" y2="34.0" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                    <line x1="54" y1="132.3" x2="602" y2="132.3" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                    <line x1="54" y1="230.5" x2="602" y2="230.5" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                    <line x1="54" y1="328.8" x2="602" y2="328.8" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                    <polygon
+                            points="54,427 54.0,338.6 114.9,309.1 175.8,318.9 236.7,260.0 297.6,269.8 358.4,210.8 419.3,220.7 480.2,161.7 541.1,171.5 602.0,102.8 602.0,427"
+                            fill="url(#gdk)"/>
+                    <polyline
+                            points="54.0,338.6 114.9,309.1 175.8,318.9 236.7,260.0 297.6,269.8 358.4,210.8 419.3,220.7 480.2,161.7 541.1,171.5 602.0,102.8"
+                            fill="none" stroke="#C8102E" stroke-width="3.7" stroke-linejoin="round"
+                            stroke-linecap="round"/>
+                    <circle cx="54.0" cy="338.6" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="114.9" cy="309.1" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="175.8" cy="318.9" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="236.7" cy="260.0" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="297.6" cy="269.8" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="358.4" cy="210.8" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="419.3" cy="220.7" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="480.2" cy="161.7" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="541.1" cy="171.5" r="3.72" fill="#fff" stroke="#C8102E" stroke-width="2.3"/>
+                    <circle cx="602.0" cy="102.8" r="6.51" fill="#C8102E" stroke="#C8102E" stroke-width="2.3"/>
+                    <text x="44" y="42.4" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="rgba(20,23,26,.42)">95
+                    </text>
+                    <text x="44" y="140.7" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="rgba(20,23,26,.42)">85
+                    </text>
+                    <text x="44" y="238.9" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="rgba(20,23,26,.42)">75
+                    </text>
+                    <text x="44" y="337.1" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="rgba(20,23,26,.42)">65
+                    </text>
+                    <text x="602" y="22" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="#C8102E">przygotowanie do startu
+                    </text>
+                    <line x1="602.0" y1="28" x2="602.0" y2="427" stroke="rgba(20,23,26,.3)" stroke-dasharray="4 4"/>
+                    <text x="594.0" y="451" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="24"
+                          fill="rgba(20,23,26,.5)">zawody
+                    </text>
+                </svg>
+                <div class="badge badge--78 wr-dla-07">10 treningów · +24 pkt średniej</div>
+            </div>
+        </div>
+        <div class="wr-dla-08">
+            <div class="card card--white card--p32 card--r20">
+                <div class="label-accent mb-14">PROFIL 02</div>
+                <h2 class="h3 h3--lg">Konkurencje dynamiczne</h2>
+                <p class="p-body p-body--ink p-muted">Celność bez czasu nic nie mówi. Timer i wynik z tarczy trafiają do
+                    jednego zestawienia, więc dokładnie widzisz moment, w którym szybkość zaczyna kosztować punkty.</p>
+                <div class="mono-caption">— czas i punkty razem<br>— stan amunicji po sesji</div>
+            </div>
+            <div class="card card--white card--p32 card--r20">
+                <div class="label-accent mb-14">PROFIL 03</div>
+                <h2 class="h3 h3--lg">Strzelcy okazjonalni i hobbyści</h2>
+                <p class="p-body p-body--ink p-muted">Kilka wyjazdów w roku i zero pamięci o tym, jak było ostatnio.
+                    Wystarczy zdjęcie tarczy, żeby po sezonie zobaczyć czarno na białym, że strzelasz lepiej.</p>
+                <div class="mono-caption">— zero ręcznego wpisywania<br>— historia bez zakładania konta</div>
+            </div>
+            <div class="card card--white card--p32 card--r20">
+                <div class="label-accent mb-14">PROFIL 04</div>
+                <h2 class="h3 h3--lg">Myśliwi</h2>
+                <p class="p-body p-body--ink p-muted">Przystrzelanie z konkretną optyką i amunicją na konkretnym
+                    dystansie zostaje udokumentowane. Przed sezonem nie odtwarzasz tego z pamięci — otwierasz historię
+                    danej broni.</p>
+                <div class="mono-caption">— historia przystrzelania per broń<br>— kalkulator balistyczny w planach</div>
+            </div>
+            <div class="card card--white card--p32 card--r20">
+                <div class="label-accent mb-14">PROFIL 05</div>
+                <h2 class="h3 h3--lg">Kluby i instruktorzy</h2>
+                <p class="p-body p-body--ink p-muted">Statystyki całej sekcji w jednym miejscu, postęp każdego zawodnika
+                    na wykresie i zawody rozgrywane bez zwożenia wszystkich na jedną strzelnicę.</p>
+                <div class="mono-caption">— grupy otwarte i zamknięte<br>— zestawienia postępu grupy</div>
+            </div>
+            <div class="wr-dla-09">
+                <div class="wr-dla-10">PROFIL 06</div>
+                <h2 class="h3 h3--lg">Służby i szkolenia</h2>
+                <p class="p-body on-dark-muted wr-dla-11">Dla części użytkowników „w chmurze” nie jest opcją i nigdy nie
+                    będzie. Dlatego cały rdzeń aplikacji działa bez konta, bez sieci i bez wysyłania czegokolwiek na
+                    serwer — funkcjonalność jest pełna, nie okrojona.</p>
+                <div class="wr-dla-12">— pełna funkcjonalność offline<br>— AI działa na urządzeniu</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-divider-top">
+        <div class="wr-fun-42">
+            <div>
+                <h2 class="h-subsection h-subsection--sm wr-dla-13">Nie widzisz tu siebie?</h2>
+                <p class="p-body p-body--ink wr-dla-14">Napisz, jak strzelasz. Kolejność prac nad statystykami ustalamy
+                    razem z osobami z wczesnego dostępu — to realny wpływ, nie ankieta do szuflady.</p>
+            </div>
+            <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn-red btn--lg">Napisz do nas</a>
+        </div>
+    </section>
+<?php get_footer(); ?>

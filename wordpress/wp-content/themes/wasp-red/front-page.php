@@ -1,0 +1,673 @@
+<?php
+/**
+ * Front Page — treść z www/main/index.html.
+ *
+ * Formularz "wczesny dostęp" niżej jest 1:1 z oryginałem — bez <form> i bez
+ * realnej wysyłki. Podłączenie wtyczki formularzy (Fluent Forms/CF7) + SMTP
+ * to osobny, kolejny krok planu, nie część tego szablonu.
+ */
+defined( 'ABSPATH' ) || exit;
+
+get_header( null, [
+	'title'       => 'wasp.red — dziennik treningowy strzelca z rozpoznawaniem tarczy AI',
+	'description' => 'Wasp.red rozpoznaje typ tarczy i oznacza przestrzeliny ze zdjęcia. Wynik, broń, dystans, data i miejsce trafiają do dziennika treningowego — bez dodatkowego sprzętu i bez internetu.',
+] );
+?>
+    <section class="on-dark">
+        <div class="wr-idx-05">
+            <div>
+                <div class="wr-idx-06">
+                    <span class="wr-idx-07"></span>W budowie · zapisy na wczesny dostęp
+                </div>
+                <h1 class="h-display wr-idx-08">Zrób zdjęcie tarczy.<br>Resztę policzy<br><span class="wr-idx-09">wasp.red</span>.
+                </h1>
+                <p class="lead lead--onDark wr-idx-10">AI rozpoznaje typ tarczy i oznacza przestrzeliny — pomijając te z
+                    poprzedniej serii. Wynik, broń, dystans, data i miejsce trafiają do Twojego dziennika treningu. Bez
+                    dodatkowego sprzętu, bez internetu, bez wpisywania punktów z ręki.</p>
+                <div class="wr-idx-11">
+                    <a href="#early" class="btn-red btn--lg-shadow">Zapisz się na wczesny dostęp</a>
+                    <a href="<?php echo esc_url( home_url( '/funkcje/' ) ); ?>" class="btn-outline btn-outline--onDark">Zobacz wszystkie funkcje</a>
+                </div>
+                <p class="wr-idx-12">Android i iOS · aplikacja nie jest jeszcze dostępna w sklepach<br>We All Shooters
+                    Platform</p>
+            </div>
+            <div class="wr-idx-13">
+                <div class="wr-idx-14" id="wr-ph-l">
+                    <div class="phone-statusbar"><span>9:41</span><span class="row-gap-4"><span
+                            class="battery-icon"></span>LTE</span></div>
+                    <div class="wr-idx-15">
+                        <div class="wr-idx-16">skan · oś 3</div>
+                        <div class="wr-idx-17">Nowa seria</div>
+                    </div>
+                    <div class="wr-idx-18">
+                        <div class="wr-idx-19"></div>
+                        <span class="pin pin--12 pin--accent pin--shadow-35 pos-l49pct-t45pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l53pct-t48pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l46pct-t50pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l50pct-t53pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l56pct-t42pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l43pct-t46pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l59pct-t57pct"></span><span
+                            class="pin pin--12 pin--accent pin--shadow-35 pos-l47pct-t60pct"></span>
+                        <div class="badge badge--72 wr-idx-28">TS-2 · rozpoznano</div>
+                    </div>
+                    <div class="wr-idx-29">
+                        <div class="wr-idx-30"></div>
+                        <div class="wr-idx-31">8 nowych przestrzelin<br>2 z poprzedniej serii pominięte</div>
+                    </div>
+                </div>
+                <div class="wr-idx-32" id="wr-ph-c">
+                    <div class="phone-statusbar"><span>9:42</span><span class="row-gap-4"><span
+                            class="battery-icon"></span>LTE</span></div>
+                    <div class="wr-idx-33">
+                        <div class="wr-idx-34">seria 12 · dziś 18:24</div>
+                    </div>
+                    <div class="wr-idx-35">
+                        <div class="wr-idx-36">94</div>
+                        <div class="wr-idx-37">/ 100 pkt</div>
+                        <div class="chip chip--accent wr-idx-38">+6</div>
+                    </div>
+                    <div class="wr-idx-39"><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l49pct-t45pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l53pct-t48pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l46pct-t50pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l50pct-t53pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l56pct-t42pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l43pct-t46pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l59pct-t57pct"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-35 pos-l47pct-t60pct"></span></div>
+                    <div class="wr-idx-48">
+                        <div class="phone-icon-btn phone-icon-btn--sm">
+                            <div class="phone-badge-label">Broń</div>
+                            <div class="phone-stat-value-sm">CZ Shadow 2</div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--sm">
+                            <div class="phone-badge-label">Kaliber</div>
+                            <div class="phone-stat-value-sm">9×19</div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--sm">
+                            <div class="phone-badge-label">Dystans</div>
+                            <div class="phone-stat-value-sm">25 m</div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--sm">
+                            <div class="phone-badge-label">Miejsce</div>
+                            <div class="phone-stat-value-sm">Klub Wawer</div>
+                        </div>
+                    </div>
+                    <div class="wr-idx-49">
+                        <div class="wr-idx-50">
+                            <div class="bar-v bar-v--muted wr-idx-51"></div>
+                            <div class="bar-v bar-v--muted bar-80"></div>
+                            <div class="bar-v bar-v--muted wr-idx-52"></div>
+                            <div class="bar-v bar--accent bar-90-accent"></div>
+                            <div class="bar-v bar-v--muted bar-80"></div>
+                            <div class="bar-v bar--accent bar-full-accent"></div>
+                            <div class="bar-v bar--accent bar-90-accent"></div>
+                            <div class="bar-v bar-v--muted wr-idx-51"></div>
+                            <div class="bar-v bar--accent bar-full-accent"></div>
+                            <div class="bar-v bar--accent bar-90-accent"></div>
+                            <div class="bar-v bar-v--muted bar-80"></div>
+                            <div class="bar-v bar--accent bar-full-accent"></div>
+                        </div>
+                        <div class="wr-idx-53">punkty strzał po strzale</div>
+                    </div>
+                </div>
+                <div class="wr-idx-54" id="wr-ph-r">
+                    <div class="phone-statusbar"><span>9:40</span><span class="row-gap-4"><span
+                            class="battery-icon"></span>LTE</span></div>
+                    <div class="wr-idx-55">
+                        <div class="wr-idx-56">Szafa</div>
+                        <div class="wr-idx-57">4 egzemplarze · 3 kalibry</div>
+                    </div>
+                    <div class="wr-idx-58">
+                        <div class="phone-icon-btn phone-icon-btn--lg">
+                            <div class="text-sm-bold">CZ Shadow 2</div>
+                            <div class="phone-stat-label">9×19 · kolimator</div>
+                            <div class="progress-track">
+                                <div class="bar-h bar-h--muted wr-idx-59"></div>
+                            </div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--lg">
+                            <div class="text-sm-bold">Glock 17</div>
+                            <div class="phone-stat-label">9×19</div>
+                            <div class="progress-track">
+                                <div class="bar-h bar-h--muted wr-idx-60"></div>
+                            </div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--lg">
+                            <div class="text-sm-bold">CZ 457</div>
+                            <div class="phone-stat-label">.22 LR</div>
+                            <div class="progress-track">
+                                <div class="bar-h bar-h--muted wr-idx-61"></div>
+                            </div>
+                        </div>
+                        <div class="phone-icon-btn phone-icon-btn--lg">
+                            <div class="text-sm-bold">AR-15</div>
+                            <div class="phone-stat-label">.223 Rem · luneta</div>
+                            <div class="progress-track">
+                                <div class="bar-h bar--accent wr-idx-62"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wr-idx-63">stan amunicji liczony automatycznie<br>po każdej zapisanej serii</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="wr-idx-65">
+            <div>
+                <div class="stat-num stat-num--xl">dziesiątki tys.</div>
+                <div class="mono-note">czynnych strzelców w Polsce,<br>miliony na świecie</div>
+            </div>
+            <div>
+                <div class="stat-num stat-num--xl">600</div>
+                <div class="mono-note">klubów sportowych w Polsce,<br>tysiące na świecie</div>
+            </div>
+            <div>
+                <div class="stat-num stat-num--xl">setki</div>
+                <div class="mono-note">zawodów strzeleckich<br>rocznie w samej Polsce</div>
+            </div>
+            <div>
+                <div class="wr-idx-66">0</div>
+                <div class="mono-note">dodatkowych urządzeń<br>i warunków oświetlenia</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="on-dark">
+        <div class="section-inner-lg wr-idx-67">
+            <div>
+                <div class="eyebrow-light">01 — Problem</div>
+                <h2 class="h-display wr-idx-68">Strzelec patrzy na tarczę, mówi „poszło dobrze” i wraca na
+                    stanowisko.</h2>
+                <p class="wr-idx-69">Seria, podejście do tarczy, zakreślenie albo zalepienie przestrzelin, powrót. I
+                    tyle. Wynik zostaje w głowie albo w notatniku, którego nikt nie otwiera. Analiza „na żywo” nie
+                    istnieje, a dzielenie się wynikami kończy się na zdjęciu wysłanym na czacie.</p>
+            </div>
+            <div class="stack-12">
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Excel i zdjęcia w galerii</div>
+                    <div class="body-muted on-dark-muted">Da się. Jest niewygodne, zbyt techniczne i po trzech
+                        treningach nikt tego nie prowadzi.
+                    </div>
+                </div>
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Systemy elektroniczne na strzelnicy</div>
+                    <div class="body-muted on-dark-muted">Drogie, przywiązane do jednej osi, pokrywają wąski wycinek
+                        tego, czego strzelec potrzebuje.
+                    </div>
+                </div>
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Istniejące aplikacje</div>
+                    <div class="body-muted on-dark-muted">Liczą punkty, ale bez AI, z siermiężnym interfejsem i
+                        praktycznie bez warstwy społecznościowej.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jak-dziala">
+        <div class="section-inner-lg">
+            <div class="eyebrow">02 — Jak to działa</div>
+            <h2 class="h-section wr-idx-70">Trzy sekundy między serią a zapisanym wynikiem</h2>
+            <p class="p-body p-body--ink wr-idx-71">Jedyne, co czasem musisz podać, to dystans — a i to nie zawsze: oś o
+                znanej długości rozpoznaje się po lokalizacji.</p>
+            <div class="wr-idx-72">
+                <div class="card card--white card--p28 card--r18">
+                    <div class="label-accent">KROK 01</div>
+                    <div class="wr-idx-73">
+                        <div class="wr-idx-74"></div>
+                        <span class="wr-idx-75"></span><span class="wr-idx-76"></span><span
+                            class="wr-idx-77"></span><span class="wr-idx-78"></span>
+                        <span class="pos-l50pct-t47pct wr-idx-79"></span>
+                        <span class="pos-l50pct-t47pct wr-idx-80"></span>
+                        <span class="pos-l50pct-t47pct wr-idx-81"></span>
+                        <div class="badge badge--72 wr-idx-82">AUTO · 25 m</div>
+                        <div class="wr-idx-83"></div>
+                    </div>
+                    <div class="h3 h3--md">Zrzut tarczy</div>
+                    <div class="body-muted">Zdjęcie ze stanowiska. Bez statywu, bez markerów, bez wymagań co do
+                        światła.
+                    </div>
+                </div>
+                <div class="card card--white card--p28 card--r18">
+                    <div class="label-accent">KROK 02</div>
+                    <div class="wr-idx-84">
+                        <span class="pos-l50pct-t47pct wr-idx-85"></span>
+                        <span class="pin pin--14 pin--accent pin--shadow-35 pos-l49pct-t45pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l53pct-t48pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l46pct-t50pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l50pct-t53pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l56pct-t42pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l43pct-t46pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l59pct-t57pct"></span><span
+                            class="pin pin--14 pin--accent pin--shadow-35 pos-l47pct-t60pct"></span>
+                        <span class="pin pin--14 pin--white-45 pin--shadow-35 pos-l45pct-t38pct"></span><span
+                            class="pin pin--14 pin--white-45 pin--shadow-35 pos-l57pct-t52pct"></span>
+                        <div class="pos-l12px-t12px badge badge--78 badge--green">tarcza TS-2 · 98%</div>
+                        <div class="pos-b12px-l12px badge badge--78 badge--stacked">
+                            <span class="wr-idx-98"><span class="wr-idx-99"></span>8 nowych</span>
+                            <span class="wr-idx-100"><span class="wr-idx-101"></span>2 pominięte</span>
+                        </div>
+                    </div>
+                    <div class="h3 h3--md">AI czyta tarczę</div>
+                    <div class="body-muted">Rozpoznaje typ tarczy, znajduje przestrzeliny i pomija te z poprzedniej
+                        serii. Model działa offline, na urządzeniu.
+                    </div>
+                </div>
+                <div class="card card--white card--p28 card--r18">
+                    <div class="label-accent">KROK 03</div>
+                    <div class="wr-idx-102">
+                        <div class="wr-idx-103">
+                            <div class="wr-idx-104"><span
+                                    class="pin pin--6 pin--accent-light-9 pin--shadow-35 pos-l49pct-t45pct"></span><span
+                                    class="pin pin--6 pin--accent-light-9 pin--shadow-35 pos-l53pct-t48pct"></span><span
+                                    class="pin pin--6 pin--accent-light-9 pin--shadow-35 pos-l46pct-t50pct"></span><span
+                                    class="pin pin--6 pin--accent-light-9 pin--shadow-35 pos-l50pct-t53pct"></span><span
+                                    class="pin pin--6 pin--accent-light-9 pin--shadow-35 pos-l56pct-t42pct"></span>
+                            </div>
+                            <div class="wr-idx-110">
+                                <div class="wr-idx-111">94 pkt · 10 strzałów</div>
+                                <div class="wr-idx-112">12.04 · 18:24 · Klub Wawer</div>
+                            </div>
+                        </div>
+                        <div class="wr-idx-113">
+                            <span class="chip">CZ Shadow 2</span><span class="chip">25 m</span><span
+                                class="chip">9×19</span><span class="chip">12°C</span><span class="chip chip--accent">zapisane</span>
+                        </div>
+                    </div>
+                    <div class="h3 h3--md">Seria w dzienniku</div>
+                    <div class="body-muted">Wynik plus kontekst: data, godzina, miejsce, pogoda, broń, kaliber, dodatki,
+                        dystans.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="on-dark" id="statystyki">
+        <div class="section-inner-lg">
+            <div class="eyebrow-light">03 — Statystyki i zestawienia</div>
+            <h2 class="h-section wr-idx-115">Każda seria to dane. Krzyżuj je, jak chcesz.</h2>
+            <p class="p-body on-dark-muted wr-idx-116">Punkty i pola trafienia to tylko jedna zmienna. Wasp.red zestawia
+                je z resztą kontekstu treningu — także z tym, o którym zwykle się zapomina, jak długość sesji czy
+                godzina strzelania.</p>
+            <div class="wr-idx-117">
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Punkty i pola trafień</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Typ tarczy</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Dystans</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Broń i kaliber</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Dodatki: kolimator, luneta</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Pora dnia treningu</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Długość sesji</div>
+                <div class="card card--dark card--p18-20 card--r14 text-16-bold">Pogoda</div>
+            </div>
+            <div class="wr-idx-118">
+                <div class="card card--white card--p32 card--r20">
+                    <div class="wr-idx-119">
+                        <svg class="fill" viewBox="0 0 620 349">
+                            <defs>
+                                <linearGradient id="wpg" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0" stop-color="#C8102E" stop-opacity=".22"/>
+                                    <stop offset="1" stop-color="#C8102E" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                            <line x1="54" y1="34.0" x2="602" y2="34.0" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                            <line x1="54" y1="103.3" x2="602" y2="103.3" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                            <line x1="54" y1="172.5" x2="602" y2="172.5" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                            <line x1="54" y1="241.8" x2="602" y2="241.8" stroke="rgba(20,23,26,.09)" stroke-width="1"/>
+                            <polygon
+                                    points="54,311 54.0,262.5 103.8,221.0 153.6,248.7 203.5,200.2 253.3,207.1 303.1,165.6 352.9,179.4 402.7,130.9 452.5,144.8 502.4,96.3 552.2,110.2 602.0,61.7 602.0,311"
+                                    fill="url(#wpg)"/>
+                            <polyline
+                                    points="54.0,262.5 103.8,221.0 153.6,248.7 203.5,200.2 253.3,207.1 303.1,165.6 352.9,179.4 402.7,130.9 452.5,144.8 502.4,96.3 552.2,110.2 602.0,61.7"
+                                    fill="none" stroke="#C8102E" stroke-width="2.8" stroke-linejoin="round"
+                                    stroke-linecap="round"/>
+                            <circle cx="54.0" cy="262.5" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="103.8" cy="221.0" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="153.6" cy="248.7" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="203.5" cy="200.2" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="253.3" cy="207.1" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="303.1" cy="165.6" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="352.9" cy="179.4" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="402.7" cy="130.9" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="452.5" cy="144.8" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="502.4" cy="96.3" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="552.2" cy="110.2" r="2.7920000000000003" fill="#fff" stroke="#C8102E"
+                                    stroke-width="1.7"/>
+                            <circle cx="602.0" cy="61.7" r="4.886" fill="#C8102E" stroke="#C8102E" stroke-width="1.7"/>
+                            <text x="44" y="40.3" text-anchor="end" font-family="ui-monospace,Menlo,monospace"
+                                  font-size="18" fill="rgba(20,23,26,.42)">95
+                            </text>
+                            <text x="44" y="109.5" text-anchor="end" font-family="ui-monospace,Menlo,monospace"
+                                  font-size="18" fill="rgba(20,23,26,.42)">85
+                            </text>
+                            <text x="44" y="178.8" text-anchor="end" font-family="ui-monospace,Menlo,monospace"
+                                  font-size="18" fill="rgba(20,23,26,.42)">75
+                            </text>
+                            <text x="44" y="248.1" text-anchor="end" font-family="ui-monospace,Menlo,monospace"
+                                  font-size="18" fill="rgba(20,23,26,.42)">65
+                            </text>
+                            <text x="602" y="22" text-anchor="end" font-family="ui-monospace,Menlo,monospace"
+                                  font-size="18" fill="#C8102E">średnia serii · pistolet 25 m
+                            </text>
+
+                        </svg>
+                    </div>
+                    <div class="h3 h3--md">Postęp, nie pojedynczy wynik</div>
+                    <div class="body-muted">Trend przez tygodnie i sezony, a nie „dobrze/źle” po jednej serii.</div>
+                </div>
+                <div class="card card--white card--p32 card--r20">
+                    <div class="wr-idx-120">
+                        <div class="wr-idx-121"></div>
+                        <span class="wr-idx-122"></span>
+                        <span class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-123"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-124"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-125"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-126"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-127"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-128"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-129"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-130"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-131"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-132"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-133"></span><span
+                            class="pin pin--10 pin--accent-light-95 pin--shadow-3 wr-idx-134"></span>
+                        <div class="pos-l12px-t12px badge badge--72">120 strzałów · CZ Shadow 2 · 25 m</div>
+                        <div class="badge badge--72 badge--green wr-idx-136">skupienie 68 mm · środek −9 mm / −6 mm
+                        </div>
+                    </div>
+                    <div class="h3 h3--md">Rozkład trafień</div>
+                    <div class="body-muted">Gdzie skupienie faktycznie leży — z podziałem na broń, dystans i
+                        konkurencję.
+                    </div>
+                </div>
+                <div class="card card--accent-soft card--p32 card--r20">
+                    <div class="tag-pill wr-idx-138">Do potwierdzenia · L-01</div>
+                    <div class="wr-idx-139">
+                        <div class="wr-idx-140"><span
+                                class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-141"></span><span
+                                class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-142"></span><span
+                                class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-143"></span><span
+                                class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-144"></span><span
+                                class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-145"></span></div>
+                        <div class="wr-idx-146">
+                            <div class="wr-idx-147">rada po serii</div>
+                            <div class="wr-idx-148">Skupienie przesunięte w lewo i w dół — sprawdź nacisk palca na
+                                języku spustowym.
+                            </div>
+                            <div class="wr-idx-149">
+                                <span>· 9 z 12 serii z tym samym odchyleniem</span>
+                                <span>· sugestia oparta na 4 ostatnich treningach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h3 h3--md">Rada, nie tylko liczba</div>
+                    <div class="body-muted on-dark-muted">Hipoteza: aplikacja podpowiada, co zmienić w kolejnej serii.
+                        Warstwa doradcza nie jest opisana w dokumentach projektu — zakres i sposób działania wymagają
+                        decyzji przed publikacją strony.
+                    </div>
+                    <div class="wr-idx-150"><a class="text-16-bold" href="<?php echo esc_url( home_url( '/funkcje/' ) ); ?>">Roadmapa i statusy funkcji →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section bg-tint">
+        <div class="wr-idx-152">
+            <div>
+                <div class="eyebrow">04 — Wirtualna szafa</div>
+                <h2 class="h-subsection h-subsection--md wr-idx-153">Twoja kolekcja w jednym miejscu</h2>
+                <p class="p-body p-body--ink wr-idx-154">Broń, kalibry, kolimatory i lunety opisane raz — potem
+                    wybierasz je jednym tapnięciem przy zapisie serii. Stan amunicji liczy się sam, razem z kosztem,
+                    który przy dzisiejszych cenach niski nie jest.</p>
+                <div class="wr-idx-155">
+                    <div class="row-gap-12-baseline"><span class="label-accent">01</span><span class="text-16">Baza broni z dodatkami i konfiguracjami</span>
+                    </div>
+                    <div class="row-gap-12-baseline"><span class="label-accent">02</span><span class="text-16">Stan i zużycie amunicji per kaliber</span>
+                    </div>
+                    <div class="row-gap-12-baseline"><span class="label-accent">03</span><span class="text-16">Timer strzelniczy w aplikacji</span>
+                    </div>
+                    <div class="row-gap-12-baseline"><span class="wr-idx-156">04</span><span class="wr-idx-157">Kalkulator balistyczny — w planach</span>
+                    </div>
+                    <div class="wr-idx-150"><a class="text-16-bold" href="<?php echo esc_url( home_url( '/o-projekcie/' ) ); ?>">O projekcie i etapie prac
+                        →</a></div>
+                </div>
+            </div>
+            <div class="wr-idx-159">
+                <div class="wr-idx-160"><span>9:40</span><span>LTE</span></div>
+                <div class="wr-idx-161">
+                    <div class="wr-idx-162">Wirtualna szafa</div>
+                    <div class="wr-idx-57">4 egzemplarze · 3 kalibry · 1 240 szt. amunicji</div>
+                </div>
+                <div class="wr-idx-164">
+                    <div class="phone-panel">
+                        <div class="row-between-baseline">
+                            <div class="text-md-bold">CZ Shadow 2</div>
+                            <div class="phone-caption">620 szt.</div>
+                        </div>
+                        <div class="phone-stat-label-lg">9×19 · kolimator</div>
+                        <div class="progress-track-lg">
+                            <div class="bar-h bar-h--muted wr-idx-165"></div>
+                        </div>
+                    </div>
+                    <div class="phone-panel">
+                        <div class="row-between-baseline">
+                            <div class="text-md-bold">Glock 17</div>
+                            <div class="phone-caption">300 szt.</div>
+                        </div>
+                        <div class="phone-stat-label-lg">9×19</div>
+                        <div class="progress-track-lg">
+                            <div class="bar-h bar-h--muted wr-idx-166"></div>
+                        </div>
+                    </div>
+                    <div class="phone-panel">
+                        <div class="row-between-baseline">
+                            <div class="text-md-bold">CZ 457 Varmint</div>
+                            <div class="phone-caption">280 szt.</div>
+                        </div>
+                        <div class="phone-stat-label-lg">.22 LR · luneta 4-16×</div>
+                        <div class="progress-track-lg">
+                            <div class="bar-h bar-h--muted wr-idx-167"></div>
+                        </div>
+                    </div>
+                    <div class="phone-panel">
+                        <div class="row-between-baseline">
+                            <div class="text-md-bold">AR-15</div>
+                            <div class="wr-idx-168">40 szt.</div>
+                        </div>
+                        <div class="phone-stat-label-lg">.223 Rem</div>
+                        <div class="progress-track-lg">
+                            <div class="bar-h bar--accent wr-idx-169"></div>
+                        </div>
+                    </div>
+                    <div class="wr-idx-170">+ dodaj broń lub dodatek</div>
+                </div>
+                <div class="wr-idx-171">
+                    <div class="wr-idx-172">Timer strzelniczy</div>
+                    <div class="wr-idx-173">koszt amunicji<br>liczony na bieżąco</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="on-dark" id="spolecznosc">
+        <div class="section-inner-lg">
+            <div class="eyebrow-light">05 — Społeczność</div>
+            <h2 class="h-section wr-idx-70">Wirtualna strzelnica — dla tych, którzy chcą</h2>
+            <p class="p-body on-dark-muted wr-idx-116">Funkcje społecznościowe są w całości opcjonalne i włączają się
+                dopiero, gdy zdecydujesz się korzystać z trybu online.</p>
+            <div class="wr-idx-174">
+                <div class="card card--dark card--p24">
+                    <div class="card-title">Znajomi i porównania</div>
+                    <div class="body-muted on-dark-muted">Zestawiaj postęp z ludźmi, z którymi strzelasz.</div>
+                </div>
+                <div class="card card--dark card--p24">
+                    <div class="card-title">Wirtualne kluby</div>
+                    <div class="body-muted on-dark-muted">Grupy otwarte lub zamknięte, z własnymi statystykami i
+                        zawodami.
+                    </div>
+                </div>
+                <div class="card card--dark card--p24">
+                    <div class="card-title">Zawody i wyzwania</div>
+                    <div class="body-muted on-dark-muted">Turnieje między użytkownikami — bez wyjazdu na jedną
+                        strzelnicę.
+                    </div>
+                </div>
+                <div class="card card--dark card--p24">
+                    <div class="card-title">Odznaki</div>
+                    <div class="body-muted on-dark-muted">Grywalizacja, która ma sens także w trybie offline.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-inner-lg">
+            <div class="eyebrow">06 — Offline i online</div>
+            <h2 class="h-section wr-idx-175">Ty decydujesz, ile z tego opuszcza telefon</h2>
+            <div class="wr-idx-118">
+                <div class="card card--white card--p32 card--r20">
+                    <div class="stat-num stat-num--md">Offline</div>
+                    <div class="mono-note">bez konta, bez sieci, bez chmury</div>
+                    <div class="list-stack">
+                        <div class="row-gap-12"><span class="text-accent">—</span>Wykrywanie tarczy i przestrzelin</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Analizy i statystyki</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Wirtualna szafa i amunicja</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Śledzenie treningów</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Timer strzelniczy</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Odznaki</div>
+                    </div>
+                </div>
+                <div class="card card--white card--p32 card--r20">
+                    <div class="stat-num stat-num--md">Online</div>
+                    <div class="mono-note">włączasz wtedy, kiedy chcesz</div>
+                    <div class="list-stack">
+                        <div class="row-gap-12"><span class="text-accent">—</span>Kopia danych w chmurze</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Statystyki w przeglądarce</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Znajomi i wirtualne kluby</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Zawody między użytkownikami</div>
+                        <div class="row-gap-12"><span class="text-accent">—</span>Udostępnianie wyników</div>
+                    </div>
+                </div>
+            </div>
+            <p class="p-body p-body--ink wr-idx-176">Kluczowe funkcje nie potrzebują internetu — także dlatego, że część
+                naszych użytkowników to funkcjonariusze służb, dla których „w chmurze” nie jest opcją.</p>
+        </div>
+    </section>
+
+    <section class="on-dark" id="prywatnosc">
+        <div class="wr-idx-177">
+            <div>
+                <div class="eyebrow-light">07 — Prywatność</div>
+                <h2 class="h-subsection h-subsection--md wr-idx-153">Nie jesteś produktem</h2>
+                <p class="p-body on-dark-muted wr-idx-178">Dane o Twojej broni, treningach i lokalizacjach strzelnic nie
+                    są przedmiotem obrotu. Nie sprzedajemy danych ani metadanych użytkowników. Rozpoznawanie tarczy
+                    dzieje się na urządzeniu, a synchronizacja z chmurą jest wyborem, nie warunkiem działania
+                    aplikacji.</p>
+                <p class="p-body on-dark-muted wr-idx-179">Bezpieczeństwo traktujemy jak funkcję produktu: szyfrowanie
+                    danych, redundancja infrastruktury i zewnętrzne audyty — zarówno warstwy offline, jak i online.</p>
+            </div>
+            <div class="stack-12">
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">AI na urządzeniu</div>
+                    <div class="body-muted body-muted--tight on-dark-muted">Zdjęcia tarcz nie muszą nigdzie wyjeżdżać.
+                    </div>
+                </div>
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Zewnętrzne audyty bezpieczeństwa</div>
+                    <div class="body-muted body-muted--tight on-dark-muted">Planowane przed udostępnieniem trybu
+                        online.
+                    </div>
+                </div>
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Zero handlu danymi</div>
+                    <div class="body-muted body-muted--tight on-dark-muted">Ani danych, ani metadanych, ani profili do
+                        targetowania.
+                    </div>
+                </div>
+                <a href="<?php echo esc_url( home_url( '/prywatnosc/' ) ); ?>" class="btn-invert btn--block">Pełny opis prywatności i bezpieczeństwa →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-divider-top bg-tint">
+        <div class="section-inner-lg">
+            <div class="eyebrow">08 — Dla kogo</div>
+            <h2 class="h-section wr-idx-180">Jedna aplikacja, sześć powodów, żeby ją mieć</h2>
+            <div class="wr-idx-181">
+                <div class="card card--p24">
+                    <div class="card-title">Strzelcy sportowi</div>
+                    <div class="body-muted">Dziennik przygotowań do zawodów, który prowadzi się sam.</div>
+                </div>
+                <div class="card card--p24">
+                    <div class="card-title">Konkurencje dynamiczne</div>
+                    <div class="body-muted">Celność i czas w jednym zestawieniu, z timerem w aplikacji.</div>
+                </div>
+                <div class="card card--p24">
+                    <div class="card-title">Strzelcy okazjonalni</div>
+                    <div class="body-muted">Pierwszy raz widzisz, czy naprawdę idzie Ci lepiej niż miesiąc temu.</div>
+                </div>
+                <div class="card card--p24">
+                    <div class="card-title">Myśliwi</div>
+                    <div class="body-muted">Kontrola przystrzelania broni i dodatków na konkretnych dystansach.</div>
+                </div>
+                <div class="card card--p24">
+                    <div class="card-title">Kluby i instruktorzy</div>
+                    <div class="body-muted">Grupy, zawody i wspólne statystyki zawodników w jednym miejscu.</div>
+                </div>
+                <div class="card card--p24">
+                    <div class="card-title">Służby i szkolenia</div>
+                    <div class="body-muted">Pełna funkcjonalność bez konta i bez wysyłania czegokolwiek na serwer.</div>
+                </div>
+            </div>
+            <div class="wr-idx-182"><a class="text-16-bold" href="<?php echo esc_url( home_url( '/dla-kogo/' ) ); ?>">Rozwinięte profile użytkowników →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="wr-idx-183" id="early">
+        <div class="wr-idx-184">
+            <div>
+                <div class="wr-idx-185">09 — Wczesny dostęp</div>
+                <h2 class="h-display wr-idx-186">Zbudujmy to z ludźmi, którzy realnie strzelają</h2>
+                <p class="p-body p-body--onDarkStrong wr-idx-187">Zostaw adres, a dostaniesz zaproszenie do pierwszych
+                    testów i wpływ na to, które statystyki powstaną najpierw. Bez newslettera przy okazji.</p>
+            </div>
+            <div class="wr-idx-188">
+                <div class="stack-12">
+                    <label class="field"><span class="text-sm-bold">Adres e-mail</span><input
+                            class="field-input wr-idx-189" type="email" placeholder="jan@przyklad.pl"></label>
+                    <label class="field"><span class="text-sm-bold">Jak strzelasz?</span><select
+                            class="field-input card--white">
+                        <option>Sportowo, statyczne</option>
+                        <option>Sportowo, dynamiczne</option>
+                        <option>Rekreacyjnie</option>
+                        <option>Myślistwo</option>
+                        <option>Klub lub instruktor</option>
+                        <option>Służby, szkolenia</option>
+                    </select></label>
+                    <label class="wr-idx-191"><input class="wr-idx-192" type="checkbox"><span>Zgadzam się na kontakt w sprawie testów wasp.red. Adres nie zostanie nikomu przekazany.</span></label>
+                    <button class="btn-dark btn--submit">Dopisz mnie do listy</button>
+                    <div class="wr-idx-193">Prace nad wasp.red trwają od marca 2025<br>Premiera aplikacji nie została
+                        jeszcze ogłoszona
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php get_footer(); ?>

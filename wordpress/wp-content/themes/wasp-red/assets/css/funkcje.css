@@ -1,0 +1,198 @@
+/* ===================================================================
+   funkcje.css - style uzywane wylacznie na stronie funkcje.html
+   Wspolne style (nawigacja, przyciski, karty, typografia) w styles.css.
+   =================================================================== */
+
+.label-accent--mb18 {
+  margin-bottom: 20px;
+}
+.phone-icon-btn--alt {
+  padding: 7px 9px;
+  border-radius: 9px;
+  border: 1px solid rgb(var(--white) / .05);
+}
+.mono-list {
+  display: grid;
+  gap: 8px;
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  color: rgb(var(--ink) / .5);
+}
+.p-muted-16 {
+  margin: 0 0 14px;
+}
+.progress-track-mt {
+  height: 3px;
+  border-radius: 2px;
+  background: rgb(var(--white) / .12);
+  margin-top: 6px;
+}
+.text-truncate-sm {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pin--pulse-95 {
+  border: 1px solid rgb(var(--pulse) / .95);
+}
+.wr-fun-01 {
+  max-width: 22em;
+}
+.wr-fun-02 {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(56px,8vw,88px) clamp(20px,4vw,32px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap: 18px;
+}
+.wr-fun-03 {
+  padding: 32px;
+  background: var(--color-white);
+  border: 1px solid rgb(var(--ink) / .1);
+  border-radius: 20px;
+  grid-column: span 1;
+}
+.wr-fun-04 {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background: url('../img/target.jpg') center 44%/125% no-repeat;
+}
+.wr-fun-18 {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background: var(--color-bg);
+  border: 1px solid rgb(var(--ink) / .1);
+}
+.wr-fun-19 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 34%;
+  max-width: 110px;
+  aspect-ratio: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: url('../img/target.jpg') center 46%/auto 200% no-repeat;
+  border: 1px solid rgb(var(--ink) / .18);
+  box-shadow: 0 6px 18px -10px rgb(var(--ink) / .5);
+}
+.wr-fun-20 {
+  left: 47%;
+  top: 45%;
+}
+.wr-fun-21 {
+  left: 52%;
+  top: 48%;
+}
+.wr-fun-22 {
+  left: 45%;
+  top: 50%;
+}
+.wr-fun-24 {
+  left: 55%;
+  top: 44%;
+}
+.wr-fun-25 {
+  left: 43%;
+  top: 48%;
+}
+.wr-fun-26 {
+  aspect-ratio: 4/3;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background: var(--color-panel);
+  border: 1px solid rgb(var(--white) / .05);
+  color: var(--color-white);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wr-fun-27 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  flex: none;
+}
+.wr-fun-28 {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 10px;
+  color: rgb(var(--white) / .42);
+  white-space: nowrap;
+}
+.wr-fun-29 {
+  display: grid;
+  gap: 8px;
+  flex: 1;
+  align-content: start;
+}
+.wr-fun-30 {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 8px;
+  color: rgb(var(--white) / .45);
+  white-space: nowrap;
+}
+.wr-fun-31 {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 8px;
+  color: var(--color-accent-light-hover);
+  white-space: nowrap;
+}
+.wr-fun-32 {
+  width: 14%;
+}
+.wr-fun-33 {
+  flex: none;
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 8px;
+  color: rgb(var(--white) / .35);
+}
+.wr-fun-34 {
+  margin: 0 0 12px;
+}
+.wr-fun-35 {
+  margin: 0 0 44px;
+  max-width: 40em;
+}
+.wr-fun-36 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr));
+  gap: 18px;
+}
+.wr-fun-37 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
+  gap: clamp(32px,5vw,56px);
+  align-items: start;
+}
+.wr-fun-39 {
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: rgb(var(--ink) / .4);
+  margin-bottom: 8px;
+}
+.wr-fun-41 {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+.wr-fun-43 {
+  margin: 0 0 12px;
+}
+.wr-fun-44 {
+  margin: 0;
+  max-width: 30em;
+}
