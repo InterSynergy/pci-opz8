@@ -28,8 +28,7 @@ get_header( null, [
                     <a href="#early" class="btn-red btn--lg-shadow">Zapisz się na wczesny dostęp</a>
                     <a href="<?php echo esc_url( home_url( '/funkcje/' ) ); ?>" class="btn-outline btn-outline--onDark">Zobacz wszystkie funkcje</a>
                 </div>
-                <p class="wr-idx-12">Android i iOS · aplikacja nie jest jeszcze dostępna w sklepach<br>We All Shooters
-                    Platform</p>
+                <p class="wr-idx-12">Android i iOS · aplikacja nie jest jeszcze dostępna w sklepach<br>WASP.red</p>
             </div>
             <div class="wr-idx-13">
                 <div class="wr-idx-14" id="wr-ph-l">
@@ -205,6 +204,12 @@ get_header( null, [
                         praktycznie bez warstwy społecznościowej.
                     </div>
                 </div>
+                <div class="card card--dark card--p22">
+                    <div class="tile-title-sm">Rezerwacja toru</div>
+                    <div class="body-muted on-dark-muted">Brak jednego systemu rezerwacji osi lub toru — telefon,
+                        formularz na stronie strzelnicy, czasem Booksy. Termin trzeba upilnować ręcznie.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -218,6 +223,16 @@ get_header( null, [
             <div class="wr-idx-72">
                 <div class="card card--white card--p28 card--r18">
                     <div class="label-accent">KROK 01</div>
+                    <div class="wr-idx-krok0-visual">
+                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/><path d="M8.5 14l2 2 4.5-4.5"/></svg></div>
+                    </div>
+                    <div class="h3 h3--md">Rezerwacja toru</div>
+                    <div class="body-muted">Wybierz strzelnicę, dzień i godzinę w aplikacji — bez telefonu i bez
+                        sprawdzania wolnych osi na miejscu.
+                    </div>
+                </div>
+                <div class="card card--white card--p28 card--r18">
+                    <div class="label-accent">KROK 02</div>
                     <div class="wr-idx-73">
                         <div class="wr-idx-74"></div>
                         <span class="wr-idx-75"></span><span class="wr-idx-76"></span><span
@@ -234,7 +249,7 @@ get_header( null, [
                     </div>
                 </div>
                 <div class="card card--white card--p28 card--r18">
-                    <div class="label-accent">KROK 02</div>
+                    <div class="label-accent">KROK 03</div>
                     <div class="wr-idx-84">
                         <span class="pos-l50pct-t47pct wr-idx-85"></span>
                         <span class="pin pin--14 pin--accent pin--shadow-35 pos-l49pct-t45pct"></span><span
@@ -259,7 +274,7 @@ get_header( null, [
                     </div>
                 </div>
                 <div class="card card--white card--p28 card--r18">
-                    <div class="label-accent">KROK 03</div>
+                    <div class="label-accent">KROK 04</div>
                     <div class="wr-idx-102">
                         <div class="wr-idx-103">
                             <div class="wr-idx-104"><span
@@ -440,9 +455,7 @@ get_header( null, [
                     </div>
                     <div class="row-gap-12-baseline"><span class="label-accent">02</span><span class="text-16">Stan i zużycie amunicji per kaliber</span>
                     </div>
-                    <div class="row-gap-12-baseline"><span class="label-accent">03</span><span class="text-16">Timer strzelniczy w aplikacji</span>
-                    </div>
-                    <div class="row-gap-12-baseline"><span class="wr-idx-156">04</span><span class="wr-idx-157">Kalkulator balistyczny — w planach</span>
+                    <div class="row-gap-12-baseline"><span class="wr-idx-156">03</span><span class="wr-idx-157">Kalkulator balistyczny — w planach</span>
                     </div>
                     <div class="wr-idx-150"><a class="text-16-bold" href="<?php echo esc_url( home_url( '/o-projekcie/' ) ); ?>">O projekcie i etapie prac
                         →</a></div>
@@ -498,8 +511,8 @@ get_header( null, [
                     <div class="wr-idx-170">+ dodaj broń lub dodatek</div>
                 </div>
                 <div class="wr-idx-171">
-                    <div class="wr-idx-172">Timer strzelniczy</div>
-                    <div class="wr-idx-173">koszt amunicji<br>liczony na bieżąco</div>
+                    <div class="wr-idx-172">Koszt na bieżąco</div>
+                    <div class="wr-idx-173">stan i koszt amunicji<br>liczone automatycznie</div>
                 </div>
             </div>
         </div>
@@ -543,13 +556,12 @@ get_header( null, [
             <div class="wr-idx-118">
                 <div class="card card--white card--p32 card--r20">
                     <div class="stat-num stat-num--md">Offline</div>
-                    <div class="mono-note">bez konta, bez sieci, bez chmury</div>
+                    <div class="mono-note">bez sieci, bez chmury</div>
                     <div class="list-stack">
                         <div class="row-gap-12"><span class="text-accent">—</span>Wykrywanie tarczy i przestrzelin</div>
                         <div class="row-gap-12"><span class="text-accent">—</span>Analizy i statystyki</div>
                         <div class="row-gap-12"><span class="text-accent">—</span>Wirtualna szafa i amunicja</div>
                         <div class="row-gap-12"><span class="text-accent">—</span>Śledzenie treningów</div>
-                        <div class="row-gap-12"><span class="text-accent">—</span>Timer strzelniczy</div>
                         <div class="row-gap-12"><span class="text-accent">—</span>Odznaki</div>
                     </div>
                 </div>
@@ -608,31 +620,22 @@ get_header( null, [
     <section class="section-divider-top bg-tint">
         <div class="section-inner-lg">
             <div class="eyebrow">08 — Dla kogo</div>
-            <h2 class="h-section wr-idx-180">Jedna aplikacja, sześć powodów, żeby ją mieć</h2>
+            <h2 class="h-section wr-idx-180">Jedna aplikacja, trzy powody, żeby ją mieć</h2>
             <div class="wr-idx-181">
                 <div class="card card--p24">
-                    <div class="card-title">Strzelcy sportowi</div>
-                    <div class="body-muted">Dziennik przygotowań do zawodów, który prowadzi się sam.</div>
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+                    <div class="card-title">Strzelcy sportowi i hobbyści</div>
+                    <div class="body-muted">Dziennik przygotowań do zawodów, który prowadzi się sam — a dla okazjonalnych strzelców to po prostu dowód, że idzie im lepiej niż miesiąc temu.</div>
                 </div>
                 <div class="card card--p24">
-                    <div class="card-title">Konkurencje dynamiczne</div>
-                    <div class="body-muted">Celność i czas w jednym zestawieniu, z timerem w aplikacji.</div>
-                </div>
-                <div class="card card--p24">
-                    <div class="card-title">Strzelcy okazjonalni</div>
-                    <div class="body-muted">Pierwszy raz widzisz, czy naprawdę idzie Ci lepiej niż miesiąc temu.</div>
-                </div>
-                <div class="card card--p24">
-                    <div class="card-title">Myśliwi</div>
-                    <div class="body-muted">Kontrola przystrzelania broni i dodatków na konkretnych dystansach.</div>
-                </div>
-                <div class="card card--p24">
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8.5" cy="8" r="2.6"/><path d="M3.5 19c0-3 2.2-5 5-5s5 2 5 5"/><circle cx="16.5" cy="9" r="2.2"/><path d="M14.8 13.3c2.3.2 3.9 2 3.9 4.7"/></svg></div>
                     <div class="card-title">Kluby i instruktorzy</div>
                     <div class="body-muted">Grupy, zawody i wspólne statystyki zawodników w jednym miejscu.</div>
                 </div>
                 <div class="card card--p24">
+                    <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.2 8.2-7 10-3.8-1.8-7-5-7-10V6l7-3z"/><path d="M9 12l2.2 2.2L15.5 9.5"/></svg></div>
                     <div class="card-title">Służby i szkolenia</div>
-                    <div class="body-muted">Pełna funkcjonalność bez konta i bez wysyłania czegokolwiek na serwer.</div>
+                    <div class="body-muted">Rdzeń aplikacji działa bez sieci i bez wysyłania czegokolwiek na serwer — funkcjonalność jest pełna, nie okrojona.</div>
                 </div>
             </div>
             <div class="wr-idx-182"><a class="text-16-bold" href="<?php echo esc_url( home_url( '/dla-kogo/' ) ); ?>">Rozwinięte profile użytkowników →</a>
@@ -654,10 +657,9 @@ get_header( null, [
                             class="field-input wr-idx-189" type="email" placeholder="jan@przyklad.pl"></label>
                     <label class="field"><span class="text-sm-bold">Jak strzelasz?</span><select
                             class="field-input card--white">
-                        <option>Sportowo, statyczne</option>
-                        <option>Sportowo, dynamiczne</option>
-                        <option>Rekreacyjnie</option>
-                        <option>Myślistwo</option>
+                        <option>Sportowo, konkurencje statyczne</option>
+                        <option>Sportowo, konkurencje dynamiczne</option>
+                        <option>Rekreacyjnie, klubowo</option>
                         <option>Klub lub instruktor</option>
                         <option>Służby, szkolenia</option>
                     </select></label>

@@ -39,7 +39,6 @@ get_header( null, [
                         <option>Sportowo, konkurencje statyczne</option>
                         <option>Sportowo, konkurencje dynamiczne</option>
                         <option>Rekreacyjnie, klubowo</option>
-                        <option>Myślistwo</option>
                         <option>Klub lub instruktor</option>
                         <option>Służby, szkolenia</option>
                     </select></label>
@@ -75,14 +74,14 @@ get_header( null, [
                 </div>
                 <div class="card card--p28 card--r18">
                     <div class="card-title-lg">Czy potrzebuję internetu na strzelnicy?</div>
-                    <div class="body-muted-lg">Nie. Rozpoznawanie tarczy, dziennik, statystyki, szafa i timer działają
+                    <div class="body-muted-lg">Nie. Rozpoznawanie tarczy, dziennik, statystyki i szafa działają
                         offline. Sieci potrzebujesz wyłącznie do kopii w chmurze i funkcji klubowych.
                     </div>
                 </div>
                 <div class="card card--p28 card--r18">
                     <div class="card-title-lg">Czy muszę zakładać konto?</div>
-                    <div class="body-muted-lg">Nie. Instalujesz i strzelasz. Konto zakładasz tylko wtedy, gdy sam
-                        zechcesz włączyć tryb online.
+                    <div class="body-muted-lg">Tak, jednorazowo przy instalacji — konto aktywuje licencję. Chmurę i
+                        funkcje społecznościowe włączasz później, jeśli chcesz.
                     </div>
                 </div>
                 <div class="card card--p28 card--r18">

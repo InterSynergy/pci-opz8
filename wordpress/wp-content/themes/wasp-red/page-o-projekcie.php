@@ -6,14 +6,14 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( null, [
 	'title'       => 'O projekcie — wasp.red',
-	'description' => 'We All Shooters Platform — projekt aplikacji mobilnej i webowej dla strzelców, w budowie od marca 2025 roku.',
+	'description' => 'WASP.red — projekt aplikacji mobilnej i webowej dla strzelców, w budowie od marca 2025 roku.',
 ] );
 ?>
     <section class="on-dark">
         <div class="wr-opr-01">
             <div>
                 <div class="eyebrow-light">O projekcie</div>
-                <h1 class="h-display wr-opr-02">We All Shooters Platform</h1>
+                <h1 class="h-display wr-opr-02">WASP.red</h1>
                 <p class="lead lead--onDark wr-opr-03">Strzelanie jest jedną z niewielu dyscyplin, w której wynik da się
                     zmierzyć co do punktu — a mimo to prawie nikt tych pomiarów nie zbiera. Budujemy platformę, która
                     robi to za strzelca: mobilnie, offline i bez ręcznego wpisywania. Prace trwają od marca 2025
@@ -94,6 +94,29 @@ get_header( null, [
         <p class="wr-opr-19">Świadomie nie publikujemy jeszcze liczb o skuteczności rozpoznawania ani o liczbie
             użytkowników. Nie mamy ich w formie, którą dałoby się uczciwie pokazać — pojawią się na tej stronie po
             testach.</p>
+    </section>
+
+    <section class="section-inner">
+        <div class="eyebrow">Model biznesowy</div>
+        <h2 class="h-section wr-opr-11">Prosty model, bez zaskoczeń w regulaminie</h2>
+        <p class="wr-opr-19">Wasp.red jest aplikacją płatną od startu — konto aktywuje licencję i wiąże instalację z
+            użytkownikiem. Konkretne ceny ogłosimy przed premierą; poniżej sam układ modelu.</p>
+        <div class="wr-opr-12">
+            <div class="card card--white card--p28 card--r18">
+                <div class="label-accent mb-14">B2C — STRZELEC INDYWIDUALNY</div>
+                <div class="card-title">Freemium</div>
+                <div class="body-muted">Bezpłatnie: rezerwacja torów i podstawowe zliczanie wyników. W subskrypcji:
+                    pełna funkcjonalność — rozpoznawanie AI, statystyki, warstwa społecznościowa.
+                </div>
+            </div>
+            <div class="card card--white card--p28 card--r18">
+                <div class="label-accent mb-14">B2B — STRZELNICE</div>
+                <div class="card-title">Subskrypcja</div>
+                <div class="body-muted">Dedykowana wersja wasp.red dla obiektów: zarządzanie rezerwacjami torów i osi,
+                    statystyki klubowe.
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="on-dark">

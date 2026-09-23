@@ -5,7 +5,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="footer-grid">
 			<div>
 				<div class="mb-14"><img class="logo-light" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-light.png' ); ?>" alt="wasp.red"></div>
-				<div class="footer-brand-desc">We All Shooters Platform<br>Android, iOS i interfejs www<br>Projekt w
+				<div class="footer-brand-desc">WASP.red<br>Android, iOS i interfejs www<br>Projekt w
 					budowie · 2026
 				</div>
 			</div>
