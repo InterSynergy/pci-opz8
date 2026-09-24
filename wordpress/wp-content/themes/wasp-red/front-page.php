@@ -321,7 +321,7 @@ get_header( null, [
                 <div class="card card--dark card--p18-20 card--r14 text-16-bold">Pogoda</div>
             </div>
             <div class="wr-idx-118">
-                <div class="card card--white card--p32 card--r20">
+                <div class="card card--dark card--p32 card--r20">
                     <div class="wr-idx-119">
                         <svg class="fill" viewBox="0 0 620 349">
                             <defs>
@@ -383,9 +383,9 @@ get_header( null, [
                         </svg>
                     </div>
                     <div class="h3 h3--md">Postęp, nie pojedynczy wynik</div>
-                    <div class="body-muted">Trend przez tygodnie i sezony, a nie „dobrze/źle” po jednej serii.</div>
+                    <div class="body-muted on-dark-muted">Trend przez tygodnie i sezony, a nie „dobrze/źle” po jednej serii.</div>
                 </div>
-                <div class="card card--white card--p32 card--r20">
+                <div class="card card--dark card--p32 card--r20">
                     <div class="wr-idx-120">
                         <div class="wr-idx-121"></div>
                         <span class="wr-idx-122"></span>
@@ -406,7 +406,7 @@ get_header( null, [
                         </div>
                     </div>
                     <div class="h3 h3--md">Rozkład trafień</div>
-                    <div class="body-muted">Gdzie skupienie faktycznie leży — z podziałem na broń, dystans i
+                    <div class="body-muted on-dark-muted">Gdzie skupienie faktycznie leży — z podziałem na broń, dystans i
                         konkurencję.
                     </div>
                 </div>
