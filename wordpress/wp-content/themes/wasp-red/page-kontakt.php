@@ -31,28 +31,27 @@ get_header( null, [
                 </div>
             </div>
             <div class="wr-kon-05">
-                <div class="stack-12">
-                    <label class="field"><span class="text-sm-bold">Adres e-mail</span><input
-                            class="field-input wr-idx-189" type="email" placeholder="jan@przyklad.pl"></label>
-                    <label class="field"><span class="text-sm-bold">Jak strzelasz?</span><select
-                            class="field-input card--white">
-                        <option>Sportowo, konkurencje statyczne</option>
-                        <option>Sportowo, konkurencje dynamiczne</option>
-                        <option>Rekreacyjnie, klubowo</option>
-                        <option>Klub lub instruktor</option>
-                        <option>Służby, szkolenia</option>
-                    </select></label>
-                    <label class="field"><span class="text-sm-bold">Czego brakuje Ci najbardziej? <span
-                            class="wr-kon-06">opcjonalnie</span></span><textarea class="field-input wr-kon-07" rows="3"
-                                                                                 placeholder="np. porównanie dwóch rodzajów amunicji na tym samym dystansie"></textarea></label>
-                    <label class="wr-idx-191"><input class="wr-idx-192" type="checkbox"><span>Zgadzam się na kontakt w sprawie testów wasp.red. Adres nie zostanie nikomu przekazany.</span></label>
-                    <button class="btn-red btn--submit">Dopisz mnie do listy</button>
-                    <div class="wr-idx-193">Prace nad wasp.red trwają od marca 2025<br>Premiera nie została jeszcze
-                        ogłoszona
-                    </div>
-                </div>
+                <?php get_template_part( 'template-parts/early-access-form', null, [
+                    'source'       => 'kontakt',
+                    'button_class' => 'btn-red',
+                ] ); ?>
             </div>
         </div>
+    </section>
+
+    <section class="wr-kon-10">
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Ogólnie</div>
+            <div class="card-title">Pytania o aplikację</div>
+            <a class="text-16" href="mailto:info@wasp.red">info@wasp.red</a></div>
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Kluby</div>
+            <div class="card-title">Kluby i instruktorzy</div>
+            <a class="text-16" href="mailto:b2b@wasp.red">b2b@wasp.red</a></div>
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Partnerzy</div>
+            <div class="card-title">Współpraca i media</div>
+            <a class="text-16" href="mailto:media@wasp.red">media@wasp.red</a></div>
     </section>
 
     <section class="faq-section" id="faq">
@@ -98,20 +97,5 @@ get_header( null, [
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="wr-kon-10">
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Ogólnie</div>
-            <div class="card-title">Pytania o aplikację</div>
-            <a class="text-16" href="mailto:kontakt@wasp.red">kontakt@wasp.red</a></div>
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Kluby</div>
-            <div class="card-title">Kluby i instruktorzy</div>
-            <a class="text-16" href="mailto:kluby@wasp.red">kluby@wasp.red</a></div>
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Partnerzy</div>
-            <div class="card-title">Współpraca i media</div>
-            <a class="text-16" href="mailto:partnerzy@wasp.red">partnerzy@wasp.red</a></div>
     </section>
 <?php get_footer(); ?>

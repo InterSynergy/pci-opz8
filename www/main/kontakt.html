@@ -19,8 +19,13 @@
     <header class="site-header">
         <div class="header-inner">
             <a class="logo-link" href="index.html">
-                <img class="logo-dark" src="assets/img/logo-dark.png" alt="wasp.red">
+                <img class="logo-light" src="assets/img/logo-light.png" alt="wasp.red">
             </a>
+            <button type="button" class="nav-toggle" id="wr-nav-toggle" aria-expanded="false" aria-controls="wr-nav" aria-label="Otwórz menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
             <nav class="nav" id="wr-nav">
                 <a href="funkcje.html" class="nav-link">Funkcje</a>
                 <a href="dla-kogo.html" class="nav-link">Dla kogo</a>
@@ -28,7 +33,7 @@
                 <a href="o-projekcie.html" class="nav-link">O projekcie</a>
                 <a href="kontakt.html" class="nav-link">Kontakt</a>
             </nav>
-            <a href="kontakt.html" class="btn-dark btn--sm">Wczesny dostęp</a>
+            <a href="kontakt.html" class="btn-red btn--sm">Wczesny dostęp</a>
         </div>
     </header>
 
@@ -64,7 +69,7 @@
                     <label class="field"><span class="text-sm-bold">Czego brakuje Ci najbardziej? <span
                             class="wr-kon-06">opcjonalnie</span></span><textarea class="field-input wr-kon-07" rows="3"
                                                                                  placeholder="np. porównanie dwóch rodzajów amunicji na tym samym dystansie"></textarea></label>
-                    <label class="wr-idx-191"><input class="wr-idx-192" type="checkbox"><span>Zgadzam się na kontakt w sprawie testów wasp.red. Adres nie zostanie nikomu przekazany.</span></label>
+                    <label class="wr-idx-191"><input class="wr-idx-192" type="checkbox"><span>Szczegółowe informacje dotyczące przetwarzania danych osobowych i klauzula informacyjna RODO znajdują się pod adresem: <a href="polityka-prywatnosci.html" target="_blank" rel="noopener">polityka-prywatnosci.html</a>. Administratorem danych osobowych jest Marcin Stelmaszczuk. Zapoznałem/am się z klauzulą informacyjną RODO i zgadzam się na przetwarzanie moich danych osobowych.</span></label>
                     <button class="btn-red btn--submit">Dopisz mnie do listy</button>
                     <div class="wr-idx-193">Prace nad wasp.red trwają od marca 2025<br>Premiera nie została jeszcze
                         ogłoszona
@@ -72,6 +77,21 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="wr-kon-10">
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Ogólnie</div>
+            <div class="card-title">Pytania o aplikację</div>
+            <a class="text-16" href="mailto:info@wasp.red">info@wasp.red</a></div>
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Kluby</div>
+            <div class="card-title">Kluby i instruktorzy</div>
+            <a class="text-16" href="mailto:b2b@wasp.red">b2b@wasp.red</a></div>
+        <div class="card card--white card--p32 card--r20">
+            <div class="tile-eyebrow">Partnerzy</div>
+            <div class="card-title">Współpraca i media</div>
+            <a class="text-16" href="mailto:media@wasp.red">media@wasp.red</a></div>
     </section>
 
     <section class="faq-section" id="faq">
@@ -119,21 +139,6 @@
         </div>
     </section>
 
-    <section class="wr-kon-10">
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Ogólnie</div>
-            <div class="card-title">Pytania o aplikację</div>
-            <a class="text-16" href="mailto:kontakt@wasp.red">kontakt@wasp.red</a></div>
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Kluby</div>
-            <div class="card-title">Kluby i instruktorzy</div>
-            <a class="text-16" href="mailto:kluby@wasp.red">kluby@wasp.red</a></div>
-        <div class="card card--white card--p32 card--r20">
-            <div class="tile-eyebrow">Partnerzy</div>
-            <div class="card-title">Współpraca i media</div>
-            <a class="text-16" href="mailto:partnerzy@wasp.red">partnerzy@wasp.red</a></div>
-    </section>
-
     <footer class="site-footer">
         <div class="footer-grid">
             <div>
@@ -147,6 +152,7 @@
                 <a class="on-dark-muted" href="funkcje.html">Funkcje</a>
                 <a class="on-dark-muted" href="dla-kogo.html">Dla kogo</a>
                 <a class="on-dark-muted" href="prywatnosc.html">Prywatność i dane</a>
+                <a class="on-dark-muted" href="polityka-prywatnosci.html">Polityka prywatności</a>
             </div>
             <div class="footer-col">
                 <div class="footer-col-label">Projekt</div>
@@ -156,7 +162,7 @@
             </div>
             <div class="footer-col">
                 <div class="footer-col-label">Kontakt</div>
-                <a class="on-dark-muted" href="mailto:kontakt@wasp.red">kontakt@wasp.red</a>
+                <a class="on-dark-muted" href="mailto:info@wasp.red">info@wasp.red</a>
                 <span class="footer-note">Strona informacyjna.<br>Nie prowadzimy sprzedaży<br>broni ani amunicji.</span>
             </div>
         </div>
@@ -177,5 +183,6 @@
         </div>
     </footer>
 </div>
+<script src="assets/js/nav.js" defer></script>
 </body>
 </html>

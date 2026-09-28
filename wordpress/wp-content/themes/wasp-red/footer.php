@@ -14,6 +14,7 @@ defined( 'ABSPATH' ) || exit;
 				<a class="on-dark-muted" href="<?php echo esc_url( home_url( '/funkcje/' ) ); ?>">Funkcje</a>
 				<a class="on-dark-muted" href="<?php echo esc_url( home_url( '/dla-kogo/' ) ); ?>">Dla kogo</a>
 				<a class="on-dark-muted" href="<?php echo esc_url( home_url( '/prywatnosc/' ) ); ?>">Prywatność i dane</a>
+				<a class="on-dark-muted" href="<?php echo esc_url( home_url( '/polityka-prywatnosci/' ) ); ?>">Polityka prywatności</a>
 			</div>
 			<div class="footer-col">
 				<div class="footer-col-label">Projekt</div>
@@ -23,7 +24,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 			<div class="footer-col">
 				<div class="footer-col-label">Kontakt</div>
-				<a class="on-dark-muted" href="mailto:kontakt@wasp.red">kontakt@wasp.red</a>
+				<a class="on-dark-muted" href="mailto:info@wasp.red">info@wasp.red</a>
 				<span class="footer-note">Strona informacyjna.<br>Nie prowadzimy sprzedaży<br>broni ani amunicji.</span>
 			</div>
 		</div>

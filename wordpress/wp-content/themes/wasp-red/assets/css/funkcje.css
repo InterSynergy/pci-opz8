@@ -72,6 +72,20 @@
   background: var(--color-bg);
   border: 1px solid rgb(var(--ink) / .1);
 }
+/* Modyfikator tylko dla mini-karty w "00 REZERWACJA" - .wr-fun-18 samo
+   w sobie jest tez ramka na wykres w "02 ANALIZA", ktorej nie chcemy ruszac.
+   Karta wypelnia cala szerokosc dostepnego miejsca (bez sztywnego
+   max-width), wysokosc zostaje naturalna i wyśrodkowana w pionie. */
+.wr-fun-18--fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.wr-fun-18--fill .mini-card {
+  max-width: none;
+  width: 100%;
+}
 .wr-fun-19 {
   position: absolute;
   right: 10px;
@@ -189,10 +203,5 @@
   padding: 5px 10px;
   margin-bottom: 10px;
 }
-.wr-fun-43 {
-  margin: 0 0 12px;
-}
-.wr-fun-44 {
-  margin: 0;
-  max-width: 30em;
-}
+/* .wr-fun-43/-44 przeniesione do wspolnego styles.css (uzywane tez poza
+   ta strona). */

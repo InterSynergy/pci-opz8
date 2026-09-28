@@ -20,6 +20,38 @@ get_header( null, [
     </section>
 
     <section class="wr-fun-02">
+        <div class="card card--white card--p32 card--r20">
+            <div class="label-accent label-accent--mb18">00 · REZERWACJA</div>
+            <div class="wr-fun-18 wr-fun-18--fill">
+                <div class="mini-card">
+                    <div class="mini-card-head">
+                        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg></span>
+                        <span>Klub Wawer · oś 3</span>
+                    </div>
+                    <div class="mini-row">
+                        <span class="mini-chip">Pon</span>
+                        <span class="mini-chip">Wt</span>
+                        <span class="mini-chip mini-chip--active">Śr</span>
+                        <span class="mini-chip">Czw</span>
+                    </div>
+                    <div class="mini-row">
+                        <span class="mini-chip">16:00</span>
+                        <span class="mini-chip mini-chip--active">17:00</span>
+                        <span class="mini-chip">18:00</span>
+                    </div>
+                    <div class="mini-confirm"><span class="mini-check">✓</span>Zarezerwowano</div>
+                </div>
+            </div>
+            <h2 class="h3 h3--lg">Rezerwacja toru bez telefonu</h2>
+            <p class="p-body p-body--ink p-muted-16">Wybierasz strzelnicę, dzień i godzinę w aplikacji — jeden system
+                zamiast telefonu, formularza na stronie strzelnicy czy osobnej rezerwacji przez Booksy. Termin trafia
+                od razu do Twojego dziennika treningów.</p>
+            <div class="mono-list">
+                <div>— rezerwacja osi lub toru w kilka sekund</div>
+                <div>— bez dzwonienia i pilnowania terminu ręcznie</div>
+                <div>— zarezerwowany termin widoczny w dzienniku</div>
+            </div>
+        </div>
         <div class="wr-fun-03">
             <div class="label-accent label-accent--mb18">01 · RDZEŃ</div>
             <div class="wr-fun-04">
@@ -225,17 +257,24 @@ get_header( null, [
             <div class="stack-12">
                 <div class="card card--dark card--p24">
                     <div class="wr-fun-39 on-dark-muted">W planach</div>
+                    <div class="tile-title-sm">Warstwa doradcza</div>
+                    <div class="body-muted on-dark-muted">Hipoteza: aplikacja podpowiada, co zmienić w
+                        kolejnej serii. Zakres tej funkcji nie jest opisany w dokumentach projektu i wymaga decyzji
+                        przed publikacją strony.
+                    </div>
+                </div>
+                <div class="card card--dark card--p24">
+                    <div class="wr-fun-39 on-dark-muted">W planach</div>
                     <div class="tile-title-sm">Kalkulator balistyczny</div>
                     <div class="body-muted on-dark-muted">Poprawki na dystans i warunki, policzone dla konkretnej broni
                         i optyki z Twojej szafy.
                     </div>
                 </div>
-                <div class="card card--accent-soft card--p24">
-                    <div class="tag-pill wr-fun-41">Do potwierdzenia · L-01</div>
-                    <div class="tile-title-sm">Warstwa doradcza</div>
-                    <div class="body-muted p-body--ink on-dark-muted">Hipoteza: aplikacja podpowiada, co zmienić w
-                        kolejnej serii. Zakres tej funkcji nie jest opisany w dokumentach projektu i wymaga decyzji
-                        przed publikacją strony.
+                <div class="card card--dark card--p24">
+                    <div class="wr-fun-39 on-dark-muted">W planach</div>
+                    <div class="tile-title-sm">Timer strzelniczy</div>
+                    <div class="body-muted on-dark-muted">Sygnał startowy i pomiar czasu serii bezpośrednio w
+                        aplikacji — bez osobnego urządzenia na stanowisku.
                     </div>
                 </div>
             </div>

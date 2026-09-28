@@ -96,8 +96,8 @@ get_header( null, [
             testach.</p>
     </section>
 
-    <section class="section-inner">
-        <div class="eyebrow">Model biznesowy</div>
+    <section class="section-inner on-accent wr-opr-biz">
+        <div class="eyebrow-light">Model biznesowy</div>
         <h2 class="h-section wr-opr-11">Prosty model, bez zaskoczeń w regulaminie</h2>
         <p class="wr-opr-19">Wasp.red jest aplikacją płatną od startu — konto aktywuje licencję i wiąże instalację z
             użytkownikiem. Konkretne ceny ogłosimy przed premierą; poniżej sam układ modelu.</p>

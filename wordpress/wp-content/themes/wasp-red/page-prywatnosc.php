@@ -15,8 +15,8 @@ get_header( null, [
             <h1 class="h-hero-lg wr-pry-01">Twoje dane zostają u Ciebie. Bez gwiazdki.</h1>
             <p class="lead lead--onDark">Informacje o posiadanej broni, treningach i odwiedzanych strzelnicach są
                 jednymi z wrażliwszych, jakie masz w telefonie. Dlatego rdzeń wasp.red pracuje lokalnie na urządzeniu, a
-                synchronizację z chmurą włączasz sam — albo nigdy. Konto jest potrzebne tylko do aktywacji licencji, nie
-                do korzystania z danych.</p>
+                synchronizację z chmurą włączasz sam — albo nigdy. Konto jest potrzebne do potwierdzenia płatności za
+                licencję, nie do korzystania z danych.</p>
         </div>
     </section>
 
@@ -34,9 +34,9 @@ get_header( null, [
             </div>
         </div>
         <div class="card card--white card--p32 card--r20">
-            <div class="h3 h3--sm">Konto tylko do aktywacji</div>
-            <div class="body-muted-lg">Jednorazowo, przy instalacji, aktywujesz nim licencję. To nie jest zgoda na
-                wysyłanie danych — chmurę i funkcje klubowe włączasz sam, kiedy zechcesz.
+            <div class="h3 h3--sm">Konto konieczne do płatności</div>
+            <div class="body-muted-lg">Konto jest potrzebne do potwierdzenia płatności za licencję wasp.red. To nie
+                jest zgoda na wysyłanie danych — chmurę i funkcje klubowe włączasz sam, kiedy zechcesz.
             </div>
         </div>
     </section>
@@ -51,25 +51,27 @@ get_header( null, [
                     <div class="stat-num stat-num--md">Zostaje lokalnie</div>
                     <div class="mono-note-dark">tryb offline · dane na urządzeniu</div>
                     <div class="list-stack">
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Zdjęcia tarcz i wykrywanie
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Wykrywanie tarczy i
                             przestrzelin
                         </div>
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Dziennik treningów i statystyki
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Analizy i statystyki</div>
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Wirtualna szafa i amunicja
                         </div>
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Wirtualna szafa i stan amunicji
-                        </div>
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Śledzenie treningów</div>
                         <div class="row-gap-12"><span class="text-accent-light">—</span>Odznaki</div>
                     </div>
                 </div>
                 <div class="card card--dark card--p32 card--r20">
-                    <div class="stat-num stat-num--md">Wyjeżdża tylko na Twoją zgodę</div>
+                    <div class="stat-num stat-num--md">Połączenie z chmurą</div>
                     <div class="mono-note-dark">tryb online · włączasz go sam</div>
                     <div class="list-stack">
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Kopia dziennika w chmurze</div>
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Kopia danych w chmurze</div>
                         <div class="row-gap-12"><span class="text-accent-light">—</span>Statystyki w przeglądarce</div>
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Znajomi, kluby, zawody</div>
-                        <div class="row-gap-12"><span class="text-accent-light">—</span>Udostępnianie wybranych wyników
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Znajomi i wirtualne kluby
                         </div>
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Zawody między użytkownikami
+                        </div>
+                        <div class="row-gap-12"><span class="text-accent-light">—</span>Udostępnianie wyników</div>
                     </div>
                 </div>
             </div>
@@ -82,7 +84,7 @@ get_header( null, [
             <h2 class="h-subsection h-subsection--md h2">Bezpieczeństwo jest funkcją produktu, nie załącznikiem do
                 regulaminu</h2>
             <p class="p-body p-body--ink wr-fun-38">Zarówno warstwa offline, jak i online przechodzą przez zewnętrzne
-                audyty, zanim tryb online udostępnimy szerokiej grupie. Wynik opiszemy publicznie.</p>
+                audyty, zanim udostępnimy wasp.red szerokiej grupie. Wynik opiszemy publicznie.</p>
         </div>
         <div class="stack-12">
             <div class="card card--white card--p24">
@@ -100,12 +102,17 @@ get_header( null, [
                     stronę.
                 </div>
             </div>
-            <div class="card card--white card--p24">
-                <div class="tile-title-sm">Eksport i usunięcie danych</div>
-                <div class="body-muted">Dziennik jest Twój: wyeksportujesz go w każdej chwili albo usuniesz trwale razem
-                    z kontem.
-                </div>
+        </div>
+    </section>
+
+    <section class="wr-idx-183">
+        <div class="wr-fun-42">
+            <div>
+                <h2 class="h-subsection h-subsection--sm wr-fun-43">Chcesz wiedzieć więcej, zanim się zapiszesz?</h2>
+                <p class="p-body p-body--onDarkStrong wr-fun-44">Pełna, wiążąca klauzula RODO i polityka prywatności
+                    trafią na stronę przed premierą — osoby z wczesnego dostępu zobaczą je jako pierwsze.</p>
             </div>
+            <a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn-invert">Zapisz się</a>
         </div>
     </section>
 

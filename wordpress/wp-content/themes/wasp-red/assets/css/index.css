@@ -35,10 +35,18 @@
   color: var(--color-ink);
 }
 .btn--block {
+  display: block;
+  width: 100%;
   padding: 22px 24px;
   border-radius: 16px;
   font-weight: 600;
   font-size: 16px;
+  text-align: center;
+  /* .btn-invert ma domyslnie white-space:nowrap (pasuje do przyciskow w
+     rzedach flex) - tutaj etykieta jest dluga i siedzi w gridzie .stack-12,
+     wiec bez zawijania rozpychala caly kolumnowy tor grida na waskich
+     ekranach (patrz komentarz przy .wr-idx-177). */
+  white-space: normal;
 }
 .btn--lg-shadow {
   padding: 16px 28px;
@@ -245,6 +253,13 @@
 .wr-idx-03 {
   height: 51px;
   width: auto;
+  max-width: 100%;
+  /* feng-logo-strip.png (945x85) jest szerszym, wielo-logotypowym paskiem —
+     na waskich ekranach sama wysokosc 51px robi go szerszym niz viewport
+     (a body ma overflow-x:hidden, wiec bez object-fit po prostu ucinałby sie
+     po prawej zamiast proporcjonalnie sie zmniejszyć). innostart-hub-polska.png
+     (1080x502) nigdy w to nie wpada, wiec dla niego ta reguła jest no-opem. */
+  object-fit: contain;
   display: block;
 }
 .wr-idx-04 {
@@ -585,13 +600,11 @@
   aspect-ratio: 4/3;
   border-radius: 12px;
   margin-bottom: 20px;
+  padding: 20px;
   background: rgb(var(--accent) / .07);
 }
-.wr-idx-krok0-visual .card-icon {
-  width: 56px;
-  height: 56px;
-  margin-bottom: 0;
-}
+/* .mini-card i towarzyszace klasy - patrz assets/css/styles.css (wspolne,
+   bo uzywane tez poza SG, np. na stronie Funkcje). */
 .wr-idx-74 {
   position: absolute;
   inset: 0;
@@ -717,6 +730,13 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+/* .wr-idx-111 (bez wlasnego koloru) jest reuzywane tez w page-funkcje.php
+   ("Wirtualna szafa" na bialej karcie, gdzie ciemny domyslny kolor jest
+   ok) - tutaj siedzi na ciemnym panelu mockupu telefonu (.wr-idx-102) i
+   bez override byloby prawie niewidoczne (ciemny tekst na ciemnym tle). */
+.wr-idx-102 .wr-idx-111 {
+  color: var(--color-white);
 }
 .wr-idx-113 {
   display: flex;

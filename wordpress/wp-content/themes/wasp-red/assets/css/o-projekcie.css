@@ -106,6 +106,27 @@
   color: rgb(var(--ink) / .45);
   max-width: 48em;
 }
+/* Sekcja "Model biznesowy" (.wr-opr-biz) ma czerwone tlo (.on-accent) -
+   .wr-opr-19/.wr-opr-12 sa tez uzywane w sekcji "Etap prac" wyzej, wiec
+   scoped override tylko tutaj, zamiast zmieniac wspolne reguly. */
+.wr-opr-biz .wr-opr-19 {
+  color: rgb(var(--white) / .75);
+}
+/* .eyebrow-light (rozowy akcent) ma slaby kontrast na czerwonym tle
+   (2.1:1 - projektowany pod ciemne .on-dark sekcje, nie pod czerwone
+   .on-accent) - tu pelna biel czyta sie wyraznie lepiej. */
+.wr-opr-biz .eyebrow-light {
+  color: var(--color-white);
+}
+/* .card-title (bez wlasnego koloru) dziedziczy biale .on-accent z tej
+   sekcji, mimo ze siedzi w bialych kartach B2C/B2B - bez tego byloby
+   niewidoczne (bialy tekst na bialym tle). */
+.wr-opr-biz .card-title {
+  color: var(--color-ink);
+}
+.wr-opr-biz .wr-opr-12 {
+  margin-top: 44px;
+}
 .wr-opr-21 {
   margin: 0;
   max-width: 34em;

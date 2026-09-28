@@ -224,7 +224,24 @@ get_header( null, [
                 <div class="card card--white card--p28 card--r18">
                     <div class="label-accent">KROK 01</div>
                     <div class="wr-idx-krok0-visual">
-                        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/><path d="M8.5 14l2 2 4.5-4.5"/></svg></div>
+                        <div class="mini-card">
+                            <div class="mini-card-head">
+                                <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg></span>
+                                <span>Klub Wawer · oś 3</span>
+                            </div>
+                            <div class="mini-row">
+                                <span class="mini-chip">Pon</span>
+                                <span class="mini-chip">Wt</span>
+                                <span class="mini-chip mini-chip--active">Śr</span>
+                                <span class="mini-chip">Czw</span>
+                            </div>
+                            <div class="mini-row">
+                                <span class="mini-chip">16:00</span>
+                                <span class="mini-chip mini-chip--active">17:00</span>
+                                <span class="mini-chip">18:00</span>
+                            </div>
+                            <div class="mini-confirm"><span class="mini-check">✓</span>Zarezerwowano</div>
+                        </div>
                     </div>
                     <div class="h3 h3--md">Rezerwacja toru</div>
                     <div class="body-muted">Wybierz strzelnicę, dzień i godzinę w aplikacji — bez telefonu i bez
@@ -297,6 +314,30 @@ get_header( null, [
                     <div class="h3 h3--md">Seria w dzienniku</div>
                     <div class="body-muted">Wynik plus kontekst: data, godzina, miejsce, pogoda, broń, kaliber, dodatki,
                         dystans.
+                    </div>
+                </div>
+                <div class="card card--white card--p28 card--r18">
+                    <div class="label-accent">KROK 05</div>
+                    <div class="wr-idx-krok0-visual">
+                        <div class="mini-card">
+                            <div class="mini-card-head">
+                                <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.6l7.6-4.2M8.2 13.4l7.6 4.2"/></svg></span>
+                                <span>94 pkt · Seria 12</span>
+                            </div>
+                            <div class="mini-row">
+                                <span class="mini-chip">Znajomi</span>
+                                <span class="mini-chip">Klub Wawer</span>
+                            </div>
+                            <div class="mini-row">
+                                <span class="mini-chip mini-chip--active">Zawody</span>
+                                <span class="mini-chip">Odznaki</span>
+                            </div>
+                            <div class="mini-confirm"><span class="mini-check">↗</span>Udostępniono wynik</div>
+                        </div>
+                    </div>
+                    <div class="h3 h3--md">Dziel się wynikiem</div>
+                    <div class="body-muted">Opcjonalnie: znajomi i porównania, wirtualne kluby, zawody i wyzwania oraz
+                        odznaki — włączasz je sam, gdy zechcesz korzystać z trybu online.
                     </div>
                 </div>
             </div>
@@ -411,7 +452,6 @@ get_header( null, [
                     </div>
                 </div>
                 <div class="card card--accent-soft card--p32 card--r20">
-                    <div class="tag-pill wr-idx-138">Do potwierdzenia · L-01</div>
                     <div class="wr-idx-139">
                         <div class="wr-idx-140"><span
                                 class="pin pin--8 pin--accent-light-95 pin--shadow-3 wr-idx-141"></span><span
@@ -652,23 +692,10 @@ get_header( null, [
                     testów i wpływ na to, które statystyki powstaną najpierw. Bez newslettera przy okazji.</p>
             </div>
             <div class="wr-idx-188">
-                <div class="stack-12">
-                    <label class="field"><span class="text-sm-bold">Adres e-mail</span><input
-                            class="field-input wr-idx-189" type="email" placeholder="jan@przyklad.pl"></label>
-                    <label class="field"><span class="text-sm-bold">Jak strzelasz?</span><select
-                            class="field-input card--white">
-                        <option>Sportowo, konkurencje statyczne</option>
-                        <option>Sportowo, konkurencje dynamiczne</option>
-                        <option>Rekreacyjnie, klubowo</option>
-                        <option>Klub lub instruktor</option>
-                        <option>Służby, szkolenia</option>
-                    </select></label>
-                    <label class="wr-idx-191"><input class="wr-idx-192" type="checkbox"><span>Zgadzam się na kontakt w sprawie testów wasp.red. Adres nie zostanie nikomu przekazany.</span></label>
-                    <button class="btn-dark btn--submit">Dopisz mnie do listy</button>
-                    <div class="wr-idx-193">Prace nad wasp.red trwają od marca 2025<br>Premiera aplikacji nie została
-                        jeszcze ogłoszona
-                    </div>
-                </div>
+                <?php get_template_part( 'template-parts/early-access-form', null, [
+                    'source'       => 'sg',
+                    'button_class' => 'btn-dark',
+                ] ); ?>
             </div>
         </div>
     </section>

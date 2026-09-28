@@ -47,18 +47,11 @@
 }
 .wr-kon-05 {
   background: var(--color-white);
+  color: var(--color-ink);
   border: 1px solid rgb(var(--ink) / .1);
   border-radius: 22px;
   padding: 32px;
   box-shadow: 0 30px 70px -40px rgb(var(--ink) / .35);
-}
-.wr-kon-06 {
-  font-weight: 400;
-  color: rgb(var(--ink) / .45);
-}
-.wr-kon-07 {
-  outline: none;
-  resize: vertical;
 }
 .wr-kon-08 {
   margin: 0 0 44px;

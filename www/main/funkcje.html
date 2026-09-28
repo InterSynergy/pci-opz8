@@ -19,8 +19,13 @@
     <header class="site-header">
         <div class="header-inner">
             <a class="logo-link" href="index.html">
-                <img class="logo-dark" src="assets/img/logo-dark.png" alt="wasp.red">
+                <img class="logo-light" src="assets/img/logo-light.png" alt="wasp.red">
             </a>
+            <button type="button" class="nav-toggle" id="wr-nav-toggle" aria-expanded="false" aria-controls="wr-nav" aria-label="Otwórz menu">
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
             <nav class="nav" id="wr-nav">
                 <a href="funkcje.html" class="nav-link">Funkcje</a>
                 <a href="dla-kogo.html" class="nav-link">Dla kogo</a>
@@ -28,7 +33,7 @@
                 <a href="o-projekcie.html" class="nav-link">O projekcie</a>
                 <a href="kontakt.html" class="nav-link">Kontakt</a>
             </nav>
-            <a href="kontakt.html" class="btn-dark btn--sm">Wczesny dostęp</a>
+            <a href="kontakt.html" class="btn-red btn--sm">Wczesny dostęp</a>
         </div>
     </header>
 
@@ -43,6 +48,38 @@
     </section>
 
     <section class="wr-fun-02">
+        <div class="card card--white card--p32 card--r20">
+            <div class="label-accent label-accent--mb18">00 · REZERWACJA</div>
+            <div class="wr-fun-18 wr-fun-18--fill">
+                <div class="mini-card">
+                    <div class="mini-card-head">
+                        <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17"/><path d="M8 3v4M16 3v4"/></svg></span>
+                        <span>Klub Wawer · oś 3</span>
+                    </div>
+                    <div class="mini-row">
+                        <span class="mini-chip">Pon</span>
+                        <span class="mini-chip">Wt</span>
+                        <span class="mini-chip mini-chip--active">Śr</span>
+                        <span class="mini-chip">Czw</span>
+                    </div>
+                    <div class="mini-row">
+                        <span class="mini-chip">16:00</span>
+                        <span class="mini-chip mini-chip--active">17:00</span>
+                        <span class="mini-chip">18:00</span>
+                    </div>
+                    <div class="mini-confirm"><span class="mini-check">✓</span>Zarezerwowano</div>
+                </div>
+            </div>
+            <h2 class="h3 h3--lg">Rezerwacja toru bez telefonu</h2>
+            <p class="p-body p-body--ink p-muted-16">Wybierasz strzelnicę, dzień i godzinę w aplikacji — jeden system
+                zamiast telefonu, formularza na stronie strzelnicy czy osobnej rezerwacji przez Booksy. Termin trafia
+                od razu do Twojego dziennika treningów.</p>
+            <div class="mono-list">
+                <div>— rezerwacja osi lub toru w kilka sekund</div>
+                <div>— bez dzwonienia i pilnowania terminu ręcznie</div>
+                <div>— zarezerwowany termin widoczny w dzienniku</div>
+            </div>
+        </div>
         <div class="wr-fun-03">
             <div class="label-accent label-accent--mb18">01 · RDZEŃ</div>
             <div class="wr-fun-04">
@@ -248,17 +285,24 @@
             <div class="stack-12">
                 <div class="card card--dark card--p24">
                     <div class="wr-fun-39 on-dark-muted">W planach</div>
+                    <div class="tile-title-sm">Warstwa doradcza</div>
+                    <div class="body-muted on-dark-muted">Hipoteza: aplikacja podpowiada, co zmienić w
+                        kolejnej serii. Zakres tej funkcji nie jest opisany w dokumentach projektu i wymaga decyzji
+                        przed publikacją strony.
+                    </div>
+                </div>
+                <div class="card card--dark card--p24">
+                    <div class="wr-fun-39 on-dark-muted">W planach</div>
                     <div class="tile-title-sm">Kalkulator balistyczny</div>
                     <div class="body-muted on-dark-muted">Poprawki na dystans i warunki, policzone dla konkretnej broni
                         i optyki z Twojej szafy.
                     </div>
                 </div>
-                <div class="card card--accent-soft card--p24">
-                    <div class="tag-pill wr-fun-41">Do potwierdzenia · L-01</div>
-                    <div class="tile-title-sm">Warstwa doradcza</div>
-                    <div class="body-muted p-body--ink on-dark-muted">Hipoteza: aplikacja podpowiada, co zmienić w
-                        kolejnej serii. Zakres tej funkcji nie jest opisany w dokumentach projektu i wymaga decyzji
-                        przed publikacją strony.
+                <div class="card card--dark card--p24">
+                    <div class="wr-fun-39 on-dark-muted">W planach</div>
+                    <div class="tile-title-sm">Timer strzelniczy</div>
+                    <div class="body-muted on-dark-muted">Sygnał startowy i pomiar czasu serii bezpośrednio w
+                        aplikacji — bez osobnego urządzenia na stanowisku.
                     </div>
                 </div>
             </div>
@@ -289,6 +333,7 @@
                 <a class="on-dark-muted" href="funkcje.html">Funkcje</a>
                 <a class="on-dark-muted" href="dla-kogo.html">Dla kogo</a>
                 <a class="on-dark-muted" href="prywatnosc.html">Prywatność i dane</a>
+                <a class="on-dark-muted" href="polityka-prywatnosci.html">Polityka prywatności</a>
             </div>
             <div class="footer-col">
                 <div class="footer-col-label">Projekt</div>
@@ -298,7 +343,7 @@
             </div>
             <div class="footer-col">
                 <div class="footer-col-label">Kontakt</div>
-                <a class="on-dark-muted" href="mailto:kontakt@wasp.red">kontakt@wasp.red</a>
+                <a class="on-dark-muted" href="mailto:info@wasp.red">info@wasp.red</a>
                 <span class="footer-note">Strona informacyjna.<br>Nie prowadzimy sprzedaży<br>broni ani amunicji.</span>
             </div>
         </div>
@@ -319,5 +364,6 @@
         </div>
     </footer>
 </div>
+<script src="assets/js/nav.js" defer></script>
 </body>
 </html>

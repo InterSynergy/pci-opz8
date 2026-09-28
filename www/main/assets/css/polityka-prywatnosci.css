@@ -1,0 +1,36 @@
+/* ===================================================================
+   polityka-prywatnosci.css - proste stylowanie prozy prawnej
+   (klauzula RODO + polityka prywatnosci i cookies), tylko ta strona.
+   =================================================================== */
+.wr-legal {
+  max-width: 760px;
+}
+.wr-legal h2 {
+  margin: 0 0 24px;
+}
+.wr-legal h3 {
+  margin: 40px 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.wr-legal p,
+.wr-legal li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(var(--ink) / .75);
+}
+.wr-legal p {
+  margin: 0 0 14px;
+}
+.wr-legal ol {
+  margin: 0 0 14px;
+  padding-left: 22px;
+  display: grid;
+  gap: 8px;
+}
+.wr-legal-section {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid rgb(var(--ink) / .1);
+}
