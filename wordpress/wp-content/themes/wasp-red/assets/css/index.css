@@ -580,10 +580,33 @@
   margin: 0 0 52px;
   max-width: 44em;
 }
+/* Kroki: 2 + 1 (KROK 03 / AI na cala szerokosc) + 2 */
 .wr-idx-72 {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 24px;
+}
+.wr-idx-step-wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+  gap: 32px;
+  align-items: center;
+}
+.wr-idx-step-wide .wr-idx-84 {
+  margin-bottom: 0;
+}
+.wr-idx-step-wide-text .label-accent {
+  margin-bottom: 12px;
+}
+@media (max-width:720px) {
+  .wr-idx-72,
+  .wr-idx-step-wide {
+      grid-template-columns: 1fr;
+  }
+  .wr-idx-step-wide {
+      gap: 20px;
+  }
 }
 .wr-idx-73 {
   position: relative;

@@ -265,8 +265,7 @@ get_header( null, [
                         światła.
                     </div>
                 </div>
-                <div class="card card--white card--p28 card--r18">
-                    <div class="label-accent">KROK 03</div>
+                <div class="card card--white card--p28 card--r18 wr-idx-step-wide">
                     <div class="wr-idx-84">
                         <span class="pos-l50pct-t47pct wr-idx-85"></span>
                         <span class="pin pin--14 pin--accent pin--shadow-35 pos-l49pct-t45pct"></span><span
@@ -285,9 +284,12 @@ get_header( null, [
                             <span class="wr-idx-100"><span class="wr-idx-101"></span>2 pominięte</span>
                         </div>
                     </div>
-                    <div class="h3 h3--md">AI czyta tarczę</div>
-                    <div class="body-muted">Rozpoznaje typ tarczy, znajduje przestrzeliny i pomija te z poprzedniej
-                        serii. Model działa offline, na urządzeniu.
+                    <div class="wr-idx-step-wide-text">
+                        <div class="label-accent">KROK 03</div>
+                        <div class="h3 h3--md">AI czyta tarczę</div>
+                        <div class="body-muted">Rozpoznaje typ tarczy, znajduje przestrzeliny i pomija te z poprzedniej
+                            serii. Model działa offline, na urządzeniu.
+                        </div>
                     </div>
                 </div>
                 <div class="card card--white card--p28 card--r18">
