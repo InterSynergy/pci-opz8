@@ -599,6 +599,99 @@
 .wr-idx-step-wide-text .label-accent {
   margin-bottom: 12px;
 }
+/* Wizualizacje w kartach 50/50 - nizsze niz 4:3, zeby nie bylo pustych pol;
+   mini-card powiekszony tylko w tej sekcji (ten sam komponent jest tez na
+   /funkcje/ w mniejszej wersji). */
+#jak-dziala .wr-idx-72 > .card:not(.wr-idx-step-wide) :is(.wr-idx-73,.wr-idx-krok0-visual,.wr-idx-102) {
+  aspect-ratio: 16/10;
+}
+#jak-dziala .wr-idx-krok0-visual {
+  background:
+    radial-gradient(rgb(var(--accent) / .16) 1px, transparent 1.5px) 0 0/18px 18px,
+    rgb(var(--accent) / .07);
+}
+#jak-dziala .mini-card {
+  max-width: 300px;
+  gap: 14px;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 18px 36px rgb(var(--ink) / .14);
+}
+#jak-dziala .mini-card-head {
+  font-size: 16px;
+  gap: 10px;
+}
+#jak-dziala .mini-card-head .card-icon {
+  width: 22px;
+  height: 22px;
+}
+#jak-dziala .mini-row {
+  gap: 8px;
+}
+#jak-dziala .mini-chip {
+  padding: 6px 13px;
+  font-size: 13px;
+}
+#jak-dziala .mini-confirm {
+  font-size: 14px;
+  gap: 8px;
+}
+#jak-dziala .mini-check {
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+}
+/* KROK 04 - panel dziennika */
+#jak-dziala .wr-idx-102 {
+  padding: 18px;
+  gap: 14px;
+}
+#jak-dziala .wr-idx-104 {
+  width: 52px;
+  height: 52px;
+}
+#jak-dziala .wr-idx-111 {
+  font-size: 15px;
+}
+#jak-dziala .wr-idx-112 {
+  font-size: 11px;
+}
+.wr-idx-log {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgb(var(--white) / .04);
+}
+.wr-idx-log-head {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono',monospace;
+  font-size: 11px;
+  color: rgb(var(--white) / .45);
+}
+.wr-idx-log-bars {
+  flex: 1;
+  min-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+.wr-idx-log-bars span {
+  flex: 1;
+  height: calc(var(--h) * 100%);
+  border-radius: 4px 4px 2px 2px;
+  background: rgb(var(--white) / .14);
+}
+.wr-idx-log-bars .is-current {
+  background: var(--color-accent);
+}
+#jak-dziala .wr-idx-113 {
+  margin-top: 0;
+}
 @media (max-width:720px) {
   .wr-idx-72,
   .wr-idx-step-wide {
@@ -606,6 +699,31 @@
   }
   .wr-idx-step-wide {
       gap: 20px;
+  }
+  #jak-dziala .wr-idx-72 > .card:not(.wr-idx-step-wide) .wr-idx-73 {
+      aspect-ratio: 4/3;
+  }
+  /* mockupy (krok 1, 4, 5) - wysokosc z tresci, zeby nic nie wystawalo */
+  #jak-dziala .wr-idx-72 > .card:not(.wr-idx-step-wide) :is(.wr-idx-krok0-visual,.wr-idx-102) {
+      aspect-ratio: auto;
+  }
+  #jak-dziala .wr-idx-krok0-visual {
+      padding: 28px 16px;
+  }
+  #jak-dziala .mini-card {
+      padding: 18px;
+      gap: 12px;
+  }
+  #jak-dziala .mini-card-head {
+      font-size: 15px;
+  }
+  #jak-dziala .mini-chip {
+      padding: 5px 11px;
+      font-size: 12px;
+  }
+  .wr-idx-log-bars {
+      flex: none;
+      height: 72px;
   }
 }
 .wr-idx-73 {

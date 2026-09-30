@@ -308,6 +308,14 @@ get_header( null, [
                                 <div class="wr-idx-112">12.04 · 18:24 · Klub Wawer</div>
                             </div>
                         </div>
+                        <div class="wr-idx-log">
+                            <div class="wr-idx-log-head"><span>Ostatnie 8 serii</span><span>śr. 89,4 pkt</span></div>
+                            <div class="wr-idx-log-bars">
+                                <span style="--h:.58"></span><span style="--h:.66"></span><span style="--h:.54"></span><span
+                                    style="--h:.74"></span><span style="--h:.70"></span><span style="--h:.82"></span><span
+                                    style="--h:.78"></span><span class="is-current" style="--h:.94"></span>
+                            </div>
+                        </div>
                         <div class="wr-idx-113">
                             <span class="chip">CZ Shadow 2</span><span class="chip">25 m</span><span
                                 class="chip">9×19</span><span class="chip">12°C</span><span class="chip chip--accent">zapisane</span>
