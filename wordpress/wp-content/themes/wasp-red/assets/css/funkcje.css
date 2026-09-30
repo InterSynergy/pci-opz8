@@ -166,6 +166,9 @@
 .wr-fun-32 {
   width: 14%;
 }
+.wr-fun-bar-55 {
+  width: 55%;
+}
 .wr-fun-33 {
   flex: none;
   font-family: 'JetBrains Mono',monospace;
@@ -205,3 +208,63 @@
 }
 /* .wr-fun-43/-44 przeniesione do wspolnego styles.css (uzywane tez poza
    ta strona). */
+
+/* Uklad kart po 2 w rzedzie (2x2) zamiast 3+1 oraz 3+3 zamiast 4+2 w sekcji
+   z ikonami. Wizualizacje w kartach 50/50 nizsze (16:10), mini-karta
+   rezerwacji powiekszona, zeby nie ginela na szerszej karcie. */
+.wr-fun-02 {
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.wr-fun-02 :is(.wr-fun-04,.wr-fun-18,.wr-fun-26) {
+  aspect-ratio: 16/10;
+}
+.wr-fun-18--fill {
+  background:
+    radial-gradient(rgb(var(--ink) / .1) 1px, transparent 1.5px) 0 0/18px 18px,
+    var(--color-bg);
+}
+.wr-fun-18--fill .mini-card {
+  max-width: 320px;
+  gap: 14px;
+  padding: 22px;
+  border-radius: 16px;
+}
+.wr-fun-18--fill .mini-card-head {
+  font-size: 16px;
+}
+.wr-fun-18--fill .mini-chip {
+  padding: 6px 13px;
+  font-size: 13px;
+}
+.wr-fun-18--fill .mini-confirm {
+  font-size: 14px;
+}
+.wr-fun-36 {
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+@media (max-width:960px) {
+  .wr-fun-36 {
+      grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width:720px) {
+  .wr-fun-02,
+  .wr-fun-36 {
+      grid-template-columns: 1fr;
+  }
+  .wr-fun-02 :is(.wr-fun-04,.wr-fun-18) {
+      aspect-ratio: 4/3;
+  }
+  /* szafa (4 pozycje) - wysokosc z tresci, na 4:3 ostatnia by sie ucinala */
+  .wr-fun-02 .wr-fun-26 {
+      aspect-ratio: auto;
+  }
+  .wr-fun-18--fill .mini-card {
+      padding: 18px;
+      gap: 12px;
+  }
+  .wr-fun-18--fill .mini-chip {
+      padding: 5px 11px;
+      font-size: 12px;
+  }
+}

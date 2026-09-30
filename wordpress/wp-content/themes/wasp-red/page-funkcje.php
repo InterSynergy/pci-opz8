@@ -165,6 +165,13 @@ get_header( null, [
                         </div>
                     </div>
                     <div class="phone-icon-btn phone-icon-btn--alt">
+                        <div class="row-between-baseline"><span class="text-truncate-sm">Glock 17</span><span
+                                class="wr-fun-30">9×19</span></div>
+                        <div class="progress-track-mt">
+                            <div class="bar-h bar-h--muted wr-fun-bar-55"></div>
+                        </div>
+                    </div>
+                    <div class="phone-icon-btn phone-icon-btn--alt">
                         <div class="row-between-baseline"><span class="text-truncate-sm">CZ 457</span><span
                                 class="wr-fun-30">.22 LR</span></div>
                         <div class="progress-track-mt">
