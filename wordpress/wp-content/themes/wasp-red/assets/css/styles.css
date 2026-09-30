@@ -874,6 +874,21 @@ select.field-input {
 .wr-idx-192 {
   margin-top: 3px;
 }
+/* Pływający badge reCAPTCHA ukryty — zamiast niego .wr-recaptcha-note pod
+   przyciskiem formularza (wymóg Google). visibility, nie display:none,
+   bo display:none potrafi wyłączyć działanie reCAPTCHA. */
+.grecaptcha-badge {
+  visibility: hidden;
+}
+.wr-recaptcha-note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(var(--ink) / .55);
+  text-align: center;
+}
+.wr-recaptcha-note a {
+  text-decoration: underline;
+}
 .wr-idx-193 {
   font-family: 'JetBrains Mono',monospace;
   font-size: 12px;

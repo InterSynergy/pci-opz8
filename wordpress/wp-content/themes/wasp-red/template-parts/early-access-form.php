@@ -52,6 +52,11 @@ $error = isset( $_GET['wr_error'] );
 					placeholder="np. porównanie dwóch rodzajów amunicji na tym samym dystansie"></textarea></label>
 			<label class="wr-idx-191"><input class="wr-idx-192" type="checkbox" name="wr_consent" required><span>Szczegółowe informacje dotyczące przetwarzania danych osobowych i klauzula informacyjna RODO znajdują się pod adresem: <a href="<?php echo esc_url( home_url( '/polityka-prywatnosci/' ) ); ?>" target="_blank" rel="noopener"><?php echo esc_html( home_url( '/polityka-prywatnosci/' ) ); ?></a>. Administratorem danych osobowych jest Marcin Stelmaszczuk. Zapoznałem/am się z klauzulą informacyjną RODO i zgadzam się na przetwarzanie moich danych osobowych.</span></label>
 			<button class="<?php echo esc_attr( $button_class ); ?> btn--submit" type="submit">Dopisz mnie do listy</button>
+			<?php // Wymagane przez Google, gdy pływający badge reCAPTCHA jest ukryty (.grecaptcha-badge w styles.css). ?>
+			<div class="wr-recaptcha-note">Formularz jest chroniony przez reCAPTCHA — obowiązują
+				<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Polityka prywatności</a> i
+				<a href="https://policies.google.com/terms" target="_blank" rel="noopener">Warunki korzystania z usług</a> Google.
+			</div>
 			<div class="wr-idx-193">Prace nad wasp.red trwają od marca 2025<br>Premiera aplikacji nie została
 				jeszcze ogłoszona
 			</div>
